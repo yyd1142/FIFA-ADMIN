@@ -1,0 +1,2 @@
+{"level":"info","message":"EXEC SQL: \"SELECT * FROM fifa_user WHERE id = '1'\" 32ms","timestamp":"2018-05-08T10:41:23.157Z"}
+{"level":"info","message":"GET /api/user?id=1 131ms","timestamp":"2018-05-08T10:41:23.159Z"}
