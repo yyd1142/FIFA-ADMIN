@@ -46,3 +46,7 @@
 {"level":"info","message":"GET /api/user?id=1 95ms","timestamp":"2018-05-09T06:57:25.468Z"}
 {"level":"info","message":"EXEC SQL: \"SELECT * FROM fifa_user WHERE id = '1'\" 68ms","timestamp":"2018-05-09T06:58:38.080Z"}
 {"level":"info","message":"GET /api/user?id=1 116ms","timestamp":"2018-05-09T06:58:38.081Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT * FROM fifa_user WHERE id = '1'\" 28ms","timestamp":"2018-05-10T02:05:28.817Z"}
+{"level":"info","message":"GET /api/user?id=1 10122ms","timestamp":"2018-05-10T02:05:28.818Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT * FROM fifa_user WHERE id = '1'\" 34ms","timestamp":"2018-05-10T02:06:15.733Z"}
+{"level":"info","message":"GET /api/user?id=1 67ms","timestamp":"2018-05-10T02:06:15.733Z"}

@@ -44,6 +44,7 @@ module.exports = {
   dev: false,
   plugins: [
     '~/plugins/api',
-    '~/plugins/at-ui'
-  ]
+    '~/plugins/element-ui'
+  ],
+  css: ['element-ui/lib/theme-chalk/index.css']
 }
