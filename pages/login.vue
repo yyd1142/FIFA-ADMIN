@@ -1,16 +1,13 @@
 <template>
   <div class="index-page-wrap">
     <div class="login-wrap">
-      <!--<card :bordered="true" class="login-card">-->
-        <!--<p slot="title" style="text-align: center; font-size: 18px;">FIFI后台管理系统</p>-->
-        <!--<i-input v-model="formData.username" placeholder="请输入账号" clearable style="width: 100%"></i-input>-->
-        <!--<i-input v-model="formData.password" type="password" placeholder="请输入密码" clearable-->
-                 <!--style="width: 100%; margin-top: 15px;"></i-input>-->
-        <!--<checkbox v-model="checked" style="margin-top: 15px;">-->
-          <!--<span>一周内记住密码</span>-->
-        <!--</checkbox>-->
-        <!--<Button type="primary" style="margin-top: 15px;" @click="login" long>登&nbsp;&nbsp;录</Button>-->
-      <!--</card>-->
+      <el-card class="box-card">
+        <div class=""></div>
+        <el-input class="login-cell" v-model="formData.username" placeholder="请输入账号"></el-input>
+        <el-input class="login-cell" v-model="formData.password" placeholder="请输入密码"></el-input>
+        <el-checkbox class="login-cell" v-model="checked">一周内记住密码</el-checkbox>
+        <el-button class="login-cell login-btn" type="primary" @click="login">登&nbsp;&nbsp;录</el-button>
+      </el-card>
     </div>
   </div>
 </template>
@@ -49,9 +46,14 @@
       margin: auto;
       left: 0;
       right: 0;
-      .login-card {
+      .box-card {
         width: 300px;
-        height: 248px;
+        .login-cell {
+          margin-top: 15px;
+        }
+        .login-btn {
+          width: 100%;
+        }
       }
     }
   }

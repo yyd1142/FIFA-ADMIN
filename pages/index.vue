@@ -22,7 +22,10 @@
   import {MenuBar, MkoHeader } from '~/components'
 
   export default {
-    methods: {},
+    async asyncData(ctx){
+      ctx.redirect('/login');
+      return;
+    },
     components: {
       MenuBar,
       MkoHeader

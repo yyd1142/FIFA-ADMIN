@@ -9,21 +9,9 @@
         background-color="#626971"
         text-color="#fff"
         active-text-color="#ffd238">
-        <el-menu-item index="1" @click="linkPath('/team', 1)">
-          <i class="el-icon-star-off"></i>
-          <span slot="title">赛事管理</span>
-        </el-menu-item>
-        <el-menu-item index="2" @click="linkPath('/user', 2)">
-          <i class="el-icon-tickets"></i>
-          <span slot="title">用户管理</span>
-        </el-menu-item>
-        <el-menu-item index="3" @click="linkPath('/statistics', 3)">
-          <i class="el-icon-news"></i>
-          <span slot="title">数据统计</span>
-        </el-menu-item>
-        <el-menu-item index="4" @click="linkPath('/setting', 4)">
-          <i class="el-icon-setting"></i>
-          <span slot="title">设置</span>
+        <el-menu-item :index="`${index}`" @click="linkPath(item.path)" v-for="(item, index) in tabItems" :key="item.id">
+          <i :class="item.icon"></i>
+          <span slot="title">{{item.routeName}}</span>
         </el-menu-item>
       </el-menu>
     </div>
@@ -34,19 +22,25 @@
   export default {
     data() {
       return {
-        activeIndex: '1'
+        activeIndex: null,
+        tabItems: [{
+          id: 0, routeName: '奖品管理', path: 'prize', icon: 'el-icon-star-off'
+        }, {
+          id: 1, routeName: '赛事管理', path: 'team', icon: 'el-icon-goods'
+        }, {
+          id: 2, routeName: '用户管理', path: 'user', icon: 'el-icon-tickets'
+        }, {
+          id: 3, routeName: '数据统计', path: 'statistics', icon: 'el-icon-news'
+        }, {
+          id: 4, routeName: '设置', path: 'setting', icon: 'el-icon-setting'
+        }]
       }
     },
     mounted() {
-      console.log(this.$route.name)
-      if (this.$route.name === 'team') {
-        this.activeIndex = '1'
-      } else if (this.$route.name === 'user') {
-        this.activeIndex = '2'
-      } else if (this.$route.name === 'statistics') {
-        this.activeIndex = '3'
-      } else if (this.$route.name === 'setting') {
-        this.activeIndex = '4'
+      for(let [index, i] of this.tabItems.entries()) {
+          if(i.path === this.$route.name) {
+            this.activeIndex = index.toString()
+          }
       }
     },
     methods: {
@@ -56,9 +50,8 @@
       handleClose(key, keyPath) {
         console.log(key, keyPath);
       },
-      linkPath(path, index) {
-        this.activeIndex = index.toString()
-        this.$router.push(path);
+      linkPath(path) {
+        this.$router.push(`/${path}`);
       }
     }
   }
