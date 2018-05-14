@@ -1,57 +1,59 @@
 <template>
   <root-page>
-    <div class="team-wrap" slot="page">
+    <div class="prize-wrap" slot="page">
+      <el-button class="add-btn" type="primary" icon="el-icon-plus"></el-button>
       <el-tabs v-model="activeName" @tab-click="handleClick" type="border-card">
         <el-tab-pane label="奖品列表" name="first">
-          <el-table :data="tableData" style="width: 100%" :default-sort="{prop: 'date', order: 'descending'}">
-            <el-table-column fixed prop="date" label="日期" sortable width="180"> </el-table-column>
-            <el-table-column prop="name" label="姓名" sortable width="180"></el-table-column>
-            <el-table-column prop="address" label="地址" :formatter="formatter"></el-table-column>
+          <el-table :data="tableData" style="width: 100%">
+            <el-table-column prop="prize_name" label="奖品名称" width="240"></el-table-column>
+            <el-table-column prop="prize_prob" label="中奖概率" width="180"></el-table-column>
+            <el-table-column prop="prize_count" label="奖品库存"></el-table-column>
             <el-table-column fixed="right" label="操作" width="100">
               <template slot-scope="scope">
-                <el-button type="text" size="small">查看</el-button>
+                <el-button class="warning-font" type="text" size="small">删除</el-button>
                 <el-button type="text" size="small">编辑</el-button>
               </template>
             </el-table-column>
           </el-table>
         </el-tab-pane>
+        <el-pagination class="pagination-wrap" :current-page="currentPage" background layout="prev, pager, next"
+                       :total="totalPage"
+                       @current-change="handleCurrentChange"></el-pagination>
       </el-tabs>
     </div>
   </root-page>
 </template>
 
 <script>
+  import api from '~/plugins/api';
   import RootPage from '../index.vue';
 
   export default {
-    data() {
+    async asyncData(ctx){
+      let currentPage = 1;
+      if (ctx.query.page) currentPage = parseInt(ctx.query.page);
+      let result = await api.getPrizeList({
+        page: currentPage
+      });
       return {
+        prizeDatas: result,
+        currentPage: currentPage,
         activeName: 'first',
-        tableData: [{
-          date: '2016-05-02',
-          name: '王小虎',
-          address: '上海市普陀区金沙江路 1518 弄'
-        }, {
-          date: '2016-05-04',
-          name: '王小虎',
-          address: '上海市普陀区金沙江路 1517 弄'
-        }, {
-          date: '2016-05-01',
-          name: '王小虎',
-          address: '上海市普陀区金沙江路 1519 弄'
-        }, {
-          date: '2016-05-03',
-          name: '王小虎',
-          address: '上海市普陀区金沙江路 1516 弄'
-        }]
-      };
+        tableData: result.response.datas,
+        totalPage: result.response.pageCount * 10
+      }
     },
     methods: {
       handleClick(tab, event) {
         console.log(tab, event);
       },
-      formatter(row, column) {
-        return row.address;
+      handleCurrentChange(e) {
+        this.$router.push({
+          path: '/prize',
+          query: {
+            page: e
+          }
+        })
       }
     },
     components: {
@@ -61,10 +63,20 @@
 </script>
 
 <style lang="less">
-  .team-wrap {
+  @import "../../assets/style/index.less";
+
+  .prize-wrap {
     width: 100%;
     min-height: 600px;
     padding: 15px;
     box-sizing: border-box;
+    .add-btn {
+      position: absolute;
+      z-index: 10;
+      right: 16px;
+    }
+    .warning-font {
+      color: #f56c6c;
+    }
   }
 </style>

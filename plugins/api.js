@@ -63,5 +63,7 @@ Vue.prototype.$httpGet = httpGet;
 Vue.prototype.$httpPost = httpPost;
 
 export default {
-  userInfo: httpGet('/user')
+  userInfo: httpGet('/user'),
+  login: httpGet('/login'),
+  getPrizeList: httpGet('/prize/list')
 }

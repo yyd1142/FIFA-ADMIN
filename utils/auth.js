@@ -3,11 +3,11 @@ export const getUserFromCookie = (req) => {
 
   const cookies = req.headers.cookie.split(';')
   let user = {};
-  for (let item of cookies){
+  for (let item of cookies) {
     let keyValue = item.trim().split('=');
     user[keyValue[0]] = decodeURI(keyValue[1]);
   }
-  if ('name' in user && 'userId' in user)
+  if ('user_name' in user && 'id' in user)
     return user;
   return null;
 }
@@ -15,9 +15,9 @@ export const getUserFromCookie = (req) => {
 export const getUserFromLocalStorage = () => {
   let json = localStorage.getItem('user');
   let user = null;
-  try{
+  try {
     user = JSON.parse(json);
-  }catch(e){
+  } catch (e) {
     user = null;
   }
   return user;
@@ -29,6 +29,6 @@ export const setUser = (user) => {
 }
 
 export const removeUser = (user) => {
-	if (process.SERVER_BUILD) return
-    window.localStorage.removeItem('user')
+  if (process.SERVER_BUILD) return
+  window.localStorage.removeItem('user')
 }

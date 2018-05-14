@@ -1,18 +1,19 @@
 import {getUserFromCookie, getUserFromLocalStorage} from '~/utils/auth'
 
 export default function ({isServer, store, req, redirect, route}) {
-  // let loggedUser = isServer ? getUserFromCookie(req) : getUserFromLocalStorage()
-  // loggedUser = {"name":"祖太明","jobNumber":"203912","userId":25,"status":1}
-  // if (!loggedUser) {
-  //   if (route.name != 'login') {
-  //   	if (route.name){
-  //   		let path = `/login?redirect=${route.name}`
-  //   		return redirect(path)
-  //   	}
-  //   	else
-  //   		return redirect(`/login`)
-  //   }
-  // } else {
-  //   store.commit('SET_USER', loggedUser)
-  // }
+  let loggedUser = isServer ? getUserFromCookie(req) : getUserFromLocalStorage()
+  loggedUser = {"id": 1, "user_name": "yyd", "phone": "13528492952", "user_type": 0, "status": 1}
+  if (!loggedUser) {
+    if (route.name != 'login') {
+      if (route.name)
+        return redirect(`/login?redirect=${route.name}`)
+      else
+        return redirect(`/login`)
+    }
+  } else {
+    store.commit('SET_USER', loggedUser);
+    if (route.name === 'login') {
+      return redirect(`/prize`)
+    }
+  }
 }

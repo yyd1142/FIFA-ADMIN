@@ -3,7 +3,7 @@ module.exports = {
   ** Headers of the page
   */
   router: {
-    // middleware: ['auth']
+    middleware: ['auth']
   },
   head: {
     title: 'FIFA后台管理系统',
@@ -44,7 +44,11 @@ module.exports = {
   dev: false,
   plugins: [
     '~/plugins/api',
-    '~/plugins/element-ui'
+    '~/plugins/element-ui',
+    '~/utils/auth'
   ],
-  css: ['element-ui/lib/theme-chalk/index.css']
+  css: [
+    'element-ui/lib/theme-chalk/index.css',
+    '~/theme/index.css'
+  ]
 }

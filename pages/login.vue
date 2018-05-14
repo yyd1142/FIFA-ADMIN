@@ -4,7 +4,7 @@
       <el-card class="box-card">
         <div class=""></div>
         <el-input class="login-cell" v-model="formData.username" placeholder="请输入账号"></el-input>
-        <el-input class="login-cell" v-model="formData.password" placeholder="请输入密码"></el-input>
+        <el-input type="password" class="login-cell" v-model="formData.password" placeholder="请输入密码"></el-input>
         <el-checkbox class="login-cell" v-model="checked">一周内记住密码</el-checkbox>
         <el-button class="login-cell login-btn" type="primary" @click="login">登&nbsp;&nbsp;录</el-button>
       </el-card>
@@ -14,6 +14,8 @@
 
 <script>
   import api from '~/plugins/api'
+  import md5 from 'blueimp-md5'
+  import {setUser} from '~/utils/auth'
 
   export default {
     async asyncData(ctx) {
@@ -27,7 +29,33 @@
     },
     methods: {
       login() {
+        let isEmpty = false;
+        for (let key in this.formData) {
+          if (this.formData[key] == '') {
+            isEmpty = true;
+          }
+        }
+        if (!isEmpty) {
+          api.login({
+            username: this.formData.username,
+            password: md5(this.formData.password)
+          }).then(result => {
+            if (result.code === 0) {
+              this.$router.replace('/prize');
+              setUser(result.data);
+              this.$store.commit('SET_USER', result.data);
+            } else {
+              this.$message.error('用户名或密码错误，请重试');
+            }
+          }).catch(e => {
 
+          })
+        } else {
+          this.$message({
+            message: '请输入用户名和密码',
+            type: 'warning'
+          });
+        }
       }
     },
     components: {}
