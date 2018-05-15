@@ -144,3 +144,410 @@
 {"level":"info","message":"EXEC SQL: \"SELECT count(*) as recordCount FROM fifa_prize\" 29ms","timestamp":"2018-05-14T11:13:37.781Z"}
 {"level":"info","message":"EXEC SQL: \"SELECT * FROM fifa_prize LIMIT 0, 50\" 29ms","timestamp":"2018-05-14T11:13:37.811Z"}
 {"level":"info","message":"GET /api/prize/list?page=1 90ms","timestamp":"2018-05-14T11:13:37.813Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT count(*) as recordCount FROM fifa_prize\" 29ms","timestamp":"2018-05-15T01:31:57.214Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT * FROM fifa_prize LIMIT 0, 50\" 27ms","timestamp":"2018-05-15T01:31:57.243Z"}
+{"level":"info","message":"GET /api/prize/list?page=1 155ms","timestamp":"2018-05-15T01:31:57.246Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT count(*) as recordCount FROM fifa_prize\" 27ms","timestamp":"2018-05-15T01:35:36.602Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT * FROM fifa_prize LIMIT 0, 50\" 27ms","timestamp":"2018-05-15T01:35:36.629Z"}
+{"level":"info","message":"GET /api/prize/list?page=1 83ms","timestamp":"2018-05-15T01:35:36.629Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT count(*) as recordCount FROM fifa_prize\" 130ms","timestamp":"2018-05-15T01:42:04.764Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT * FROM fifa_prize LIMIT 0, 50\" 98ms","timestamp":"2018-05-15T01:42:04.862Z"}
+{"level":"info","message":"GET /api/prize/list?page=1 13763ms","timestamp":"2018-05-15T01:42:04.863Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT count(*) as recordCount FROM fifa_prize\" 29ms","timestamp":"2018-05-15T01:42:04.892Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT * FROM fifa_prize LIMIT 0, 50\" 29ms","timestamp":"2018-05-15T01:42:04.921Z"}
+{"level":"info","message":"GET /api/prize/list?page=1 567ms","timestamp":"2018-05-15T01:42:04.921Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT count(*) as recordCount FROM fifa_prize\" 26ms","timestamp":"2018-05-15T01:42:14.656Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT * FROM fifa_prize LIMIT 0, 50\" 25ms","timestamp":"2018-05-15T01:42:14.681Z"}
+{"level":"info","message":"GET /api/prize/list?page=1 78ms","timestamp":"2018-05-15T01:42:14.682Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT count(*) as recordCount FROM fifa_prize\" 29ms","timestamp":"2018-05-15T02:53:38.162Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT * FROM fifa_prize LIMIT 0, 50\" 27ms","timestamp":"2018-05-15T02:53:38.191Z"}
+{"level":"info","message":"GET /api/prize/list?page=1 10149ms","timestamp":"2018-05-15T02:53:38.193Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT count(*) as recordCount FROM fifa_prize\" 26ms","timestamp":"2018-05-15T02:53:41.996Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT * FROM fifa_prize LIMIT 0, 50\" 25ms","timestamp":"2018-05-15T02:53:42.021Z"}
+{"level":"info","message":"GET /api/prize/list?page=1 10078ms","timestamp":"2018-05-15T02:53:42.021Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT count(*) as recordCount FROM fifa_prize\" 26ms","timestamp":"2018-05-15T02:54:12.296Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT * FROM fifa_prize LIMIT 0, 50\" 26ms","timestamp":"2018-05-15T02:54:12.324Z"}
+{"level":"info","message":"GET /api/prize/list?page=1 81ms","timestamp":"2018-05-15T02:54:12.325Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT count(*) as recordCount FROM fifa_prize\" 29ms","timestamp":"2018-05-15T02:58:55.179Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT * FROM fifa_prize LIMIT 0, 50\" 31ms","timestamp":"2018-05-15T02:58:55.211Z"}
+{"level":"info","message":"GET /api/prize/list?page=1 10153ms","timestamp":"2018-05-15T02:58:55.212Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT count(*) as recordCount FROM fifa_prize\" 32ms","timestamp":"2018-05-15T02:59:05.057Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT * FROM fifa_prize LIMIT 0, 50\" 30ms","timestamp":"2018-05-15T02:59:05.087Z"}
+{"level":"info","message":"GET /api/prize/list?page=1 93ms","timestamp":"2018-05-15T02:59:05.088Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT count(*) as recordCount FROM fifa_prize\" 29ms","timestamp":"2018-05-15T03:00:45.058Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT * FROM fifa_prize LIMIT 0, 50\" 28ms","timestamp":"2018-05-15T03:00:45.087Z"}
+{"level":"info","message":"GET /api/prize/list?page=1 90ms","timestamp":"2018-05-15T03:00:45.088Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT count(*) as recordCount FROM fifa_prize\" 25ms","timestamp":"2018-05-15T03:06:36.831Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT * FROM fifa_prize LIMIT 0, 50\" 25ms","timestamp":"2018-05-15T03:06:36.857Z"}
+{"level":"info","message":"GET /api/prize/list?page=1 132ms","timestamp":"2018-05-15T03:06:36.857Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT count(*) as recordCount FROM fifa_prize\" 37ms","timestamp":"2018-05-15T03:06:45.660Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT * FROM fifa_prize LIMIT 0, 50\" 47ms","timestamp":"2018-05-15T03:06:45.708Z"}
+{"level":"info","message":"GET /api/prize/list?page=1 10128ms","timestamp":"2018-05-15T03:06:45.709Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT count(*) as recordCount FROM fifa_prize\" 55ms","timestamp":"2018-05-15T03:08:58.290Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT * FROM fifa_prize LIMIT 0, 50\" 26ms","timestamp":"2018-05-15T03:08:58.317Z"}
+{"level":"info","message":"GET /api/prize/list?page=1 112ms","timestamp":"2018-05-15T03:08:58.317Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT count(*) as recordCount FROM fifa_prize\" 25ms","timestamp":"2018-05-15T03:10:12.037Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT * FROM fifa_prize LIMIT 0, 50\" 25ms","timestamp":"2018-05-15T03:10:12.063Z"}
+{"level":"info","message":"GET /api/prize/list?page=1 78ms","timestamp":"2018-05-15T03:10:12.064Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT count(*) as recordCount FROM fifa_prize\" 25ms","timestamp":"2018-05-15T03:10:24.999Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT * FROM fifa_prize LIMIT 0, 50\" 26ms","timestamp":"2018-05-15T03:10:25.025Z"}
+{"level":"info","message":"GET /api/prize/list?page=1 77ms","timestamp":"2018-05-15T03:10:25.025Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT count(*) as recordCount FROM fifa_prize\" 25ms","timestamp":"2018-05-15T03:10:31.318Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT * FROM fifa_prize LIMIT 0, 50\" 26ms","timestamp":"2018-05-15T03:10:31.345Z"}
+{"level":"info","message":"GET /api/prize/list?page=1 79ms","timestamp":"2018-05-15T03:10:31.345Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT count(*) as recordCount FROM fifa_prize\" 28ms","timestamp":"2018-05-15T03:11:23.227Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT * FROM fifa_prize LIMIT 0, 50\" 26ms","timestamp":"2018-05-15T03:11:23.253Z"}
+{"level":"info","message":"GET /api/prize/list?page=1 86ms","timestamp":"2018-05-15T03:11:23.254Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT count(*) as recordCount FROM fifa_prize\" 25ms","timestamp":"2018-05-15T03:11:28.322Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT * FROM fifa_prize LIMIT 0, 50\" 25ms","timestamp":"2018-05-15T03:11:28.348Z"}
+{"level":"info","message":"GET /api/prize/list?page=1 78ms","timestamp":"2018-05-15T03:11:28.349Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT count(*) as recordCount FROM fifa_prize\" 29ms","timestamp":"2018-05-15T03:26:02.325Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT * FROM fifa_prize LIMIT 0, 50\" 29ms","timestamp":"2018-05-15T03:26:02.355Z"}
+{"level":"info","message":"GET /api/prize/list?page=1 147ms","timestamp":"2018-05-15T03:26:02.355Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT count(*) as recordCount FROM fifa_prize\" 30ms","timestamp":"2018-05-15T03:26:04.729Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT * FROM fifa_prize LIMIT 0, 50\" 29ms","timestamp":"2018-05-15T03:26:04.759Z"}
+{"level":"info","message":"GET /api/prize/list?page=1 10095ms","timestamp":"2018-05-15T03:26:04.759Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT count(*) as recordCount FROM fifa_prize\" 30ms","timestamp":"2018-05-15T03:26:05.502Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT * FROM fifa_prize LIMIT 0, 50\" 29ms","timestamp":"2018-05-15T03:26:05.533Z"}
+{"level":"info","message":"GET /api/prize/list?page=1 91ms","timestamp":"2018-05-15T03:26:05.533Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT count(*) as recordCount FROM fifa_prize\" 29ms","timestamp":"2018-05-15T03:26:38.592Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT * FROM fifa_prize LIMIT 0, 50\" 29ms","timestamp":"2018-05-15T03:26:38.621Z"}
+{"level":"info","message":"GET /api/prize/list?page=1 89ms","timestamp":"2018-05-15T03:26:38.622Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT count(*) as recordCount FROM fifa_prize\" 25ms","timestamp":"2018-05-15T03:26:38.677Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT * FROM fifa_prize LIMIT 0, 50\" 25ms","timestamp":"2018-05-15T03:26:38.702Z"}
+{"level":"info","message":"GET /api/prize/list?page=1 127ms","timestamp":"2018-05-15T03:26:38.703Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT count(*) as recordCount FROM fifa_prize\" 30ms","timestamp":"2018-05-15T03:26:43.123Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT * FROM fifa_prize LIMIT 0, 50\" 30ms","timestamp":"2018-05-15T03:26:43.153Z"}
+{"level":"info","message":"GET /api/prize/list?page=1 94ms","timestamp":"2018-05-15T03:26:43.153Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT count(*) as recordCount FROM fifa_prize\" 26ms","timestamp":"2018-05-15T03:29:17.754Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT * FROM fifa_prize LIMIT 0, 50\" 28ms","timestamp":"2018-05-15T03:29:17.783Z"}
+{"level":"info","message":"GET /api/prize/list?page=1 82ms","timestamp":"2018-05-15T03:29:17.783Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT count(*) as recordCount FROM fifa_prize\" 30ms","timestamp":"2018-05-15T03:40:15.573Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT * FROM fifa_prize LIMIT 0, 50\" 29ms","timestamp":"2018-05-15T03:40:15.604Z"}
+{"level":"info","message":"GET /api/prize/list?page=1 20155ms","timestamp":"2018-05-15T03:40:15.604Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT count(*) as recordCount FROM fifa_prize\" 31ms","timestamp":"2018-05-15T03:40:39.864Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT * FROM fifa_prize LIMIT 0, 50\" 29ms","timestamp":"2018-05-15T03:40:39.894Z"}
+{"level":"info","message":"GET /api/prize/list?page=1 92ms","timestamp":"2018-05-15T03:40:39.895Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT count(*) as recordCount FROM fifa_prize\" 30ms","timestamp":"2018-05-15T03:40:41.201Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT * FROM fifa_prize LIMIT 0, 50\" 32ms","timestamp":"2018-05-15T03:40:41.233Z"}
+{"level":"info","message":"GET /api/prize/list?page=1 124ms","timestamp":"2018-05-15T03:40:41.235Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT count(*) as recordCount FROM fifa_prize\" 29ms","timestamp":"2018-05-15T03:40:59.146Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT * FROM fifa_prize LIMIT 0, 50\" 29ms","timestamp":"2018-05-15T03:40:59.175Z"}
+{"level":"info","message":"GET /api/prize/list?page=1 155ms","timestamp":"2018-05-15T03:40:59.176Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT count(*) as recordCount FROM fifa_prize\" 31ms","timestamp":"2018-05-15T07:40:02.543Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT * FROM fifa_prize LIMIT 0, 50\" 30ms","timestamp":"2018-05-15T07:40:02.573Z"}
+{"level":"info","message":"GET /api/prize/list?page=1 10158ms","timestamp":"2018-05-15T07:40:02.574Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT count(*) as recordCount FROM fifa_prize\" 30ms","timestamp":"2018-05-15T07:41:05.432Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT * FROM fifa_prize LIMIT 0, 50\" 32ms","timestamp":"2018-05-15T07:41:05.467Z"}
+{"level":"info","message":"GET /api/prize/list?page=1 96ms","timestamp":"2018-05-15T07:41:05.467Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT count(*) as recordCount FROM fifa_prize\" 29ms","timestamp":"2018-05-15T07:41:52.383Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT * FROM fifa_prize LIMIT 0, 50\" 29ms","timestamp":"2018-05-15T07:41:52.413Z"}
+{"level":"info","message":"GET /api/prize/list?page=1 91ms","timestamp":"2018-05-15T07:41:52.414Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT * FROM fifa_admin_user WHERE user_name = 'admin' AND password = 'e10adc3949ba59abbe56e057f20f883e' LIMIT 1\" 31ms","timestamp":"2018-05-15T07:42:11.524Z"}
+{"level":"info","message":"GET /api/login?username=admin&password=e10adc3949ba59abbe56e057f20f883e 63ms","timestamp":"2018-05-15T07:42:11.524Z"}
+{"level":"info","message":"Redis 连接成功!","timestamp":"2018-05-15T07:42:54.752Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT * FROM fifa_admin_user WHERE user_name = 'admin' AND password = 'e10adc3949ba59abbe56e057f20f883e' LIMIT 1\" 136ms","timestamp":"2018-05-15T07:43:07.821Z"}
+{"level":"info","message":"GET /api/login?username=admin&password=e10adc3949ba59abbe56e057f20f883e 251ms","timestamp":"2018-05-15T07:43:07.823Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT count(*) as recordCount FROM fifa_prize\" 35ms","timestamp":"2018-05-15T07:43:08.067Z"}
+{"level":"info","message":"GET /api/prize/list?page=1 54ms","timestamp":"2018-05-15T07:43:08.067Z"}
+{"level":"info","message":"Redis 连接成功!","timestamp":"2018-05-15T08:09:08.832Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT * FROM fifa_admin_user WHERE user_name = 'admin' AND password = 'e10adc3949ba59abbe56e057f20f883e' LIMIT 1\" 14ms","timestamp":"2018-05-15T08:09:53.299Z"}
+{"level":"info","message":"GET /api/login?username=admin&password=e10adc3949ba59abbe56e057f20f883e 69ms","timestamp":"2018-05-15T08:09:53.301Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT count(*) as recordCount FROM fifa_prize\" 9ms","timestamp":"2018-05-15T08:09:53.351Z"}
+{"level":"info","message":"GET /api/prize/list?page=1 21ms","timestamp":"2018-05-15T08:09:53.352Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT count(*) as recordCount FROM fifa_prize\" 27ms","timestamp":"2018-05-15T08:10:10.993Z"}
+{"level":"info","message":"GET /api/prize/list?page=1 53ms","timestamp":"2018-05-15T08:10:10.993Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT count(*) as recordCount FROM fifa_prize\" 10ms","timestamp":"2018-05-15T08:10:11.339Z"}
+{"level":"info","message":"GET /api/prize/list?page=1 21ms","timestamp":"2018-05-15T08:10:11.340Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT count(*) as recordCount FROM fifa_prize\" 10ms","timestamp":"2018-05-15T08:10:18.533Z"}
+{"level":"info","message":"GET /api/prize/list?page=1 21ms","timestamp":"2018-05-15T08:10:18.533Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT count(*) as recordCount FROM fifa_prize\" 11ms","timestamp":"2018-05-15T08:10:18.816Z"}
+{"level":"info","message":"GET /api/prize/list?page=1 23ms","timestamp":"2018-05-15T08:10:18.816Z"}
+{"level":"info","message":"Redis 连接成功!","timestamp":"2018-05-15T08:13:36.047Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT count(*) as recordCount FROM fifa_prize\" 13ms","timestamp":"2018-05-15T08:14:02.653Z"}
+{"level":"info","message":"GET /api/prize/list?page=1 66ms","timestamp":"2018-05-15T08:14:02.656Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT count(*) as recordCount FROM fifa_prize\" 9ms","timestamp":"2018-05-15T08:14:48.183Z"}
+{"level":"info","message":"GET /api/prize/list?page=1 21ms","timestamp":"2018-05-15T08:14:48.184Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT count(*) as recordCount FROM fifa_prize\" 9ms","timestamp":"2018-05-15T08:15:10.002Z"}
+{"level":"info","message":"GET /api/prize/list?page=1 22ms","timestamp":"2018-05-15T08:15:10.003Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT count(*) as recordCount FROM fifa_prize\" 10ms","timestamp":"2018-05-15T08:17:01.162Z"}
+{"level":"info","message":"GET /api/prize/list?page=1 30ms","timestamp":"2018-05-15T08:17:01.162Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT count(*) as recordCount FROM fifa_prize\" 9ms","timestamp":"2018-05-15T08:17:03.219Z"}
+{"level":"info","message":"GET /api/prize/list?page=1 19ms","timestamp":"2018-05-15T08:17:03.219Z"}
+{"level":"info","message":"POST Body: {\"prize_name\":\"卡宴\",\"prize_count\":\"2\",\"prize_prob\":\"0.1\",\"isOnline\":1}","timestamp":"2018-05-15T08:17:35.744Z"}
+{"level":"error","message":"addPrize error: TypeError: this.beginTransaction is not a function","timestamp":"2018-05-15T08:17:35.754Z"}
+{"level":"info","message":"POST /api/prize/add 11ms","timestamp":"2018-05-15T08:17:35.755Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT count(*) as recordCount FROM fifa_prize\" 9ms","timestamp":"2018-05-15T08:17:35.890Z"}
+{"level":"info","message":"GET /api/prize/list?page=1 21ms","timestamp":"2018-05-15T08:17:35.891Z"}
+{"level":"info","message":"Redis 连接成功!","timestamp":"2018-05-15T08:21:50.780Z"}
+{"level":"info","message":"POST Body: {\"prize_name\":\"UI\",\"prize_count\":\"1\",\"prize_prob\":\"0.001\",\"isOnline\":1}","timestamp":"2018-05-15T08:22:21.880Z"}
+{"level":"info","message":"EXEC SQL: \"INSERT INTO fifa_prize SET `prize_name` = 'UI', `prize_count` = '1', `prize_prob` = '0.001', `isOnline` = 1\" 22ms","timestamp":"2018-05-15T08:22:21.958Z"}
+{"level":"info","message":"POST /api/prize/add 80ms","timestamp":"2018-05-15T08:22:21.960Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT count(*) as recordCount FROM fifa_prize\" 16ms","timestamp":"2018-05-15T08:23:50.765Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT * FROM fifa_prize LIMIT 0, 50\" 12ms","timestamp":"2018-05-15T08:23:50.778Z"}
+{"level":"info","message":"GET /api/prize/list?page=1 45ms","timestamp":"2018-05-15T08:23:50.780Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT count(*) as recordCount FROM fifa_prize\" 11ms","timestamp":"2018-05-15T08:24:35.623Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT * FROM fifa_prize LIMIT 0, 50\" 22ms","timestamp":"2018-05-15T08:24:35.646Z"}
+{"level":"info","message":"GET /api/prize/list?page=1 68ms","timestamp":"2018-05-15T08:24:35.665Z"}
+{"level":"info","message":"Redis 连接成功!","timestamp":"2018-05-15T08:25:36.789Z"}
+{"level":"info","message":"POST Body: {\"prize_name\":\"一样\",\"prize_count\":\"3\",\"prize_prob\":\"0.5\",\"isOnline\":2}","timestamp":"2018-05-15T08:25:51.422Z"}
+{"level":"info","message":"EXEC SQL: \"INSERT INTO fifa_prize SET `prize_name` = '一样', `prize_count` = '3', `prize_prob` = '0.5', `isOnline` = 2, `gmt_create` = '2018-05-15 16:25:51.514'\" 23ms","timestamp":"2018-05-15T08:25:51.537Z"}
+{"level":"info","message":"POST /api/prize/add 115ms","timestamp":"2018-05-15T08:25:51.538Z"}
+{"level":"info","message":"Redis 连接成功!","timestamp":"2018-05-15T08:28:14.399Z"}
+{"level":"info","message":"POST Body: {\"prize_name\":\"iPhone手机\",\"prize_count\":\"5\",\"prize_prob\":\"0.5\",\"isOnline\":2}","timestamp":"2018-05-15T08:28:34.172Z"}
+{"level":"info","message":"EXEC SQL: \"INSERT INTO fifa_prize SET `prize_name` = 'iPhone手机', `prize_count` = '5', `prize_prob` = '0.5', `isOnline` = 2, `gmt_create` = '2018-05-15 16:28:34.342'\" 603ms","timestamp":"2018-05-15T08:28:34.945Z"}
+{"level":"info","message":"POST /api/prize/add 776ms","timestamp":"2018-05-15T08:28:34.948Z"}
+{"level":"info","message":"Redis 连接成功!","timestamp":"2018-05-15T08:29:47.078Z"}
+{"level":"info","message":"POST Body: {\"prize_name\":\"华为荣耀X10\",\"prize_count\":\"9\",\"prize_prob\":\"0.5\",\"isOnline\":1}","timestamp":"2018-05-15T08:30:06.663Z"}
+{"level":"info","message":"EXEC SQL: \"INSERT INTO fifa_prize SET `prize_name` = '华为荣耀X10', `prize_count` = '9', `prize_prob` = '0.5', `isOnline` = 1, `gmt_create` = '2018-05-15 16:30:06.738'\" 25ms","timestamp":"2018-05-15T08:30:06.763Z"}
+{"level":"info","message":"POST /api/prize/add 103ms","timestamp":"2018-05-15T08:30:06.767Z"}
+{"level":"info","message":"Redis 连接成功!","timestamp":"2018-05-15T08:31:47.833Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT count(*) as recordCount FROM fifa_prize\" 33ms","timestamp":"2018-05-15T08:31:49.398Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT * FROM fifa_prize LIMIT 0, 50\" 413ms","timestamp":"2018-05-15T08:31:49.811Z"}
+{"level":"info","message":"GET /api/prize/list?page=1 542ms","timestamp":"2018-05-15T08:31:49.812Z"}
+{"level":"info","message":"POST Body: {\"prize_name\":\"小米6X \",\"prize_count\":\"100\",\"prize_prob\":\"0.87\",\"isOnline\":1}","timestamp":"2018-05-15T08:32:42.171Z"}
+{"level":"info","message":"EXEC SQL: \"INSERT INTO fifa_prize SET `prize_name` = '小米6X ', `prize_count` = '100', `prize_prob` = '0.87', `isOnline` = 1, `gmt_create` = '2018-05-15 16:32:42.184'\" 12ms","timestamp":"2018-05-15T08:32:42.196Z"}
+{"level":"info","message":"POST /api/prize/add 26ms","timestamp":"2018-05-15T08:32:42.198Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT count(*) as recordCount FROM fifa_prize\" 12ms","timestamp":"2018-05-15T08:32:42.316Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT * FROM fifa_prize LIMIT 0, 50\" 10ms","timestamp":"2018-05-15T08:32:42.327Z"}
+{"level":"info","message":"GET /api/prize/list?page=1 37ms","timestamp":"2018-05-15T08:32:42.328Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT count(*) as recordCount FROM fifa_prize\" 9ms","timestamp":"2018-05-15T08:35:52.050Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT * FROM fifa_prize LIMIT 0, 50\" 9ms","timestamp":"2018-05-15T08:35:52.060Z"}
+{"level":"info","message":"GET /api/prize/list?page=1 29ms","timestamp":"2018-05-15T08:35:52.060Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT count(*) as recordCount FROM fifa_prize\" 8ms","timestamp":"2018-05-15T08:35:52.782Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT * FROM fifa_prize LIMIT 0, 50\" 9ms","timestamp":"2018-05-15T08:35:52.791Z"}
+{"level":"info","message":"GET /api/prize/list?page=1 29ms","timestamp":"2018-05-15T08:35:52.792Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT count(*) as recordCount FROM fifa_prize\" 16ms","timestamp":"2018-05-15T08:36:42.149Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT * FROM fifa_prize LIMIT 0, 50\" 45ms","timestamp":"2018-05-15T08:36:42.203Z"}
+{"level":"info","message":"GET /api/prize/list?page=1 100ms","timestamp":"2018-05-15T08:36:42.205Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT count(*) as recordCount FROM fifa_prize\" 9ms","timestamp":"2018-05-15T08:36:42.395Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT * FROM fifa_prize LIMIT 0, 50\" 11ms","timestamp":"2018-05-15T08:36:42.407Z"}
+{"level":"info","message":"GET /api/prize/list?page=1 189ms","timestamp":"2018-05-15T08:36:42.407Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT count(*) as recordCount FROM fifa_prize\" 9ms","timestamp":"2018-05-15T08:36:52.251Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT * FROM fifa_prize LIMIT 0, 50\" 9ms","timestamp":"2018-05-15T08:36:52.261Z"}
+{"level":"info","message":"GET /api/prize/list?page=1 29ms","timestamp":"2018-05-15T08:36:52.261Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT count(*) as recordCount FROM fifa_prize\" 10ms","timestamp":"2018-05-15T08:39:04.190Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT * FROM fifa_prize LIMIT 0, 50\" 11ms","timestamp":"2018-05-15T08:39:04.201Z"}
+{"level":"info","message":"GET /api/prize/list?page=1 41ms","timestamp":"2018-05-15T08:39:04.202Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT count(*) as recordCount FROM fifa_prize\" 8ms","timestamp":"2018-05-15T08:39:04.212Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT * FROM fifa_prize LIMIT 0, 50\" 18ms","timestamp":"2018-05-15T08:39:04.231Z"}
+{"level":"info","message":"GET /api/prize/list?page=1 74ms","timestamp":"2018-05-15T08:39:04.240Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT count(*) as recordCount FROM fifa_prize\" 45ms","timestamp":"2018-05-15T08:41:54.089Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT * FROM fifa_prize LIMIT 0, 50\" 23ms","timestamp":"2018-05-15T08:41:54.113Z"}
+{"level":"info","message":"GET /api/prize/list?page=1 83ms","timestamp":"2018-05-15T08:41:54.114Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT count(*) as recordCount FROM fifa_prize\" 8ms","timestamp":"2018-05-15T08:41:54.128Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT * FROM fifa_prize LIMIT 0, 50\" 8ms","timestamp":"2018-05-15T08:41:54.137Z"}
+{"level":"info","message":"GET /api/prize/list?page=1 25ms","timestamp":"2018-05-15T08:41:54.137Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT count(*) as recordCount FROM fifa_prize\" 12ms","timestamp":"2018-05-15T08:42:31.637Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT * FROM fifa_prize LIMIT 0, 50\" 11ms","timestamp":"2018-05-15T08:42:31.649Z"}
+{"level":"info","message":"GET /api/prize/list?page=1 35ms","timestamp":"2018-05-15T08:42:31.650Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT count(*) as recordCount FROM fifa_prize\" 8ms","timestamp":"2018-05-15T08:43:34.100Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT count(*) as recordCount FROM fifa_prize\" 19ms","timestamp":"2018-05-15T08:43:34.111Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT * FROM fifa_prize LIMIT 0, 50\" 11ms","timestamp":"2018-05-15T08:43:34.111Z"}
+{"level":"info","message":"GET /api/prize/list?page=1 30ms","timestamp":"2018-05-15T08:43:34.111Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT * FROM fifa_prize LIMIT 0, 50\" 14ms","timestamp":"2018-05-15T08:43:34.125Z"}
+{"level":"info","message":"GET /api/prize/list?page=1 44ms","timestamp":"2018-05-15T08:43:34.126Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT count(*) as recordCount FROM fifa_prize\" 8ms","timestamp":"2018-05-15T08:44:25.735Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT * FROM fifa_prize LIMIT 0, 50\" 9ms","timestamp":"2018-05-15T08:44:25.744Z"}
+{"level":"info","message":"GET /api/prize/list?page=1 27ms","timestamp":"2018-05-15T08:44:25.745Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT count(*) as recordCount FROM fifa_prize\" 10ms","timestamp":"2018-05-15T08:44:35.480Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT * FROM fifa_prize LIMIT 0, 50\" 11ms","timestamp":"2018-05-15T08:44:35.491Z"}
+{"level":"info","message":"GET /api/prize/list?page=1 33ms","timestamp":"2018-05-15T08:44:35.491Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT count(*) as recordCount FROM fifa_prize\" 8ms","timestamp":"2018-05-15T08:44:35.864Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT * FROM fifa_prize LIMIT 0, 50\" 8ms","timestamp":"2018-05-15T08:44:35.873Z"}
+{"level":"info","message":"GET /api/prize/list?page=1 27ms","timestamp":"2018-05-15T08:44:35.874Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT count(*) as recordCount FROM fifa_prize\" 9ms","timestamp":"2018-05-15T08:45:19.894Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT * FROM fifa_prize LIMIT 0, 50\" 9ms","timestamp":"2018-05-15T08:45:19.903Z"}
+{"level":"info","message":"GET /api/prize/list?page=1 29ms","timestamp":"2018-05-15T08:45:19.903Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT count(*) as recordCount FROM fifa_prize\" 10ms","timestamp":"2018-05-15T08:45:20.073Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT * FROM fifa_prize LIMIT 0, 50\" 11ms","timestamp":"2018-05-15T08:45:20.084Z"}
+{"level":"info","message":"GET /api/prize/list?page=1 32ms","timestamp":"2018-05-15T08:45:20.086Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT count(*) as recordCount FROM fifa_prize\" 10ms","timestamp":"2018-05-15T08:59:43.018Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT * FROM fifa_prize LIMIT 0, 50\" 9ms","timestamp":"2018-05-15T08:59:43.027Z"}
+{"level":"info","message":"GET /api/prize/list?page=1 29ms","timestamp":"2018-05-15T08:59:43.027Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT count(*) as recordCount FROM fifa_prize\" 12ms","timestamp":"2018-05-15T08:59:43.346Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT * FROM fifa_prize LIMIT 0, 50\" 10ms","timestamp":"2018-05-15T08:59:43.356Z"}
+{"level":"info","message":"GET /api/prize/list?page=1 38ms","timestamp":"2018-05-15T08:59:43.357Z"}
+{"level":"info","message":"Redis 连接成功!","timestamp":"2018-05-15T09:06:17.011Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT count(*) as recordCount FROM fifa_prize\" 21ms","timestamp":"2018-05-15T09:06:19.181Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT * FROM fifa_prize LIMIT 0, 50\" 48ms","timestamp":"2018-05-15T09:06:19.230Z"}
+{"level":"info","message":"GET /api/prize/list?page=1 158ms","timestamp":"2018-05-15T09:06:19.232Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT count(*) as recordCount FROM fifa_prize\" 1494ms","timestamp":"2018-05-15T09:06:21.407Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT * FROM fifa_prize LIMIT 0, 50\" 20ms","timestamp":"2018-05-15T09:06:21.427Z"}
+{"level":"info","message":"GET /api/prize/list?page=1 2190ms","timestamp":"2018-05-15T09:06:21.427Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT count(*) as recordCount FROM fifa_prize\" 14ms","timestamp":"2018-05-15T09:06:21.550Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT * FROM fifa_prize LIMIT 0, 50\" 14ms","timestamp":"2018-05-15T09:06:21.564Z"}
+{"level":"info","message":"GET /api/prize/list?page=1 140ms","timestamp":"2018-05-15T09:06:21.564Z"}
+{"level":"info","message":"GET /api/prize/info?prizeId=3 1ms","timestamp":"2018-05-15T09:06:32.298Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT * FROM fifa_prize WHERE id = '3' LIMIT 1\" 102ms","timestamp":"2018-05-15T09:06:32.481Z"}
+{"level":"info","message":"Redis 连接成功!","timestamp":"2018-05-15T09:07:18.494Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT count(*) as recordCount FROM fifa_prize\" 29ms","timestamp":"2018-05-15T09:07:21.537Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT * FROM fifa_prize LIMIT 0, 50\" 25ms","timestamp":"2018-05-15T09:07:21.563Z"}
+{"level":"info","message":"GET /api/prize/list?page=1 196ms","timestamp":"2018-05-15T09:07:21.564Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT * FROM fifa_prize WHERE id = '7' LIMIT 1\" 50ms","timestamp":"2018-05-15T09:07:31.353Z"}
+{"level":"info","message":"GET /api/prize/info?prizeId=7 6638ms","timestamp":"2018-05-15T09:07:31.354Z"}
+{"level":"info","message":"Redis 连接成功!","timestamp":"2018-05-15T09:13:29.545Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT * FROM fifa_prize WHERE id = '7' LIMIT 1\" 28ms","timestamp":"2018-05-15T09:13:31.494Z"}
+{"level":"info","message":"GET /api/prize/info?prizeId=7 97ms","timestamp":"2018-05-15T09:13:31.495Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT count(*) as recordCount FROM fifa_prize\" 25ms","timestamp":"2018-05-15T09:13:33.474Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT * FROM fifa_prize LIMIT 0, 50\" 15ms","timestamp":"2018-05-15T09:13:33.490Z"}
+{"level":"info","message":"GET /api/prize/list?page=1 117ms","timestamp":"2018-05-15T09:13:33.491Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT count(*) as recordCount FROM fifa_prize\" 85ms","timestamp":"2018-05-15T09:13:42.677Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT * FROM fifa_prize LIMIT 0, 50\" 45ms","timestamp":"2018-05-15T09:13:42.722Z"}
+{"level":"info","message":"GET /api/prize/list?page=1 173ms","timestamp":"2018-05-15T09:13:42.723Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT * FROM fifa_prize WHERE id = '4' LIMIT 1\" 46ms","timestamp":"2018-05-15T09:13:52.244Z"}
+{"level":"info","message":"GET /api/prize/info?prizeId=4 110ms","timestamp":"2018-05-15T09:13:52.244Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT * FROM fifa_prize WHERE id = '4' LIMIT 1\" 11ms","timestamp":"2018-05-15T09:16:14.909Z"}
+{"level":"info","message":"GET /api/prize/info?prizeId=4 24ms","timestamp":"2018-05-15T09:16:14.909Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT * FROM fifa_prize WHERE id = '4' LIMIT 1\" 19ms","timestamp":"2018-05-15T09:17:29.586Z"}
+{"level":"info","message":"GET /api/prize/info?prizeId=4 36ms","timestamp":"2018-05-15T09:17:29.592Z"}
+{"level":"info","message":"Redis 连接成功!","timestamp":"2018-05-15T09:18:21.205Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT * FROM fifa_prize WHERE id = '4' LIMIT 1\" 15ms","timestamp":"2018-05-15T09:18:24.792Z"}
+{"level":"info","message":"GET /api/prize/info?prizeId=4 145ms","timestamp":"2018-05-15T09:18:24.793Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT * FROM fifa_prize WHERE id = '4' LIMIT 1\" 12ms","timestamp":"2018-05-15T09:18:58.884Z"}
+{"level":"info","message":"GET /api/prize/info?prizeId=4 24ms","timestamp":"2018-05-15T09:18:58.885Z"}
+{"level":"info","message":"Redis 连接成功!","timestamp":"2018-05-15T09:50:41.529Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT count(*) as recordCount FROM fifa_prize\" 36ms","timestamp":"2018-05-15T09:50:45.706Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT * FROM fifa_prize LIMIT 0, 50\" 30ms","timestamp":"2018-05-15T09:50:45.737Z"}
+{"level":"info","message":"GET /api/prize/list?page=1 212ms","timestamp":"2018-05-15T09:50:45.738Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT count(*) as recordCount FROM fifa_prize\" 102ms","timestamp":"2018-05-15T09:50:54.931Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT * FROM fifa_prize LIMIT 0, 50\" 61ms","timestamp":"2018-05-15T09:50:54.993Z"}
+{"level":"info","message":"GET /api/prize/list?page=1 220ms","timestamp":"2018-05-15T09:50:54.993Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT * FROM fifa_prize WHERE id = '4' LIMIT 1\" 38ms","timestamp":"2018-05-15T09:51:04.795Z"}
+{"level":"info","message":"GET /api/prize/info?prizeId=4 72ms","timestamp":"2018-05-15T09:51:04.795Z"}
+{"level":"info","message":"POST Body: {\"prize_name\":\"MAC\",\"prize_count\":3,\"prize_prob\":0.5,\"type\":2}","timestamp":"2018-05-15T09:51:17.322Z"}
+{"level":"info","message":"POST /api/prize/edit 467ms","timestamp":"2018-05-15T09:51:17.789Z"}
+{"level":"info","message":"Redis 连接成功!","timestamp":"2018-05-15T09:51:59.878Z"}
+{"level":"info","message":"POST Body: {\"prize_name\":\"MAC\",\"prize_count\":3,\"prize_prob\":0.5,\"type\":2}","timestamp":"2018-05-15T09:52:05.809Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT * FROM fifa_prize WHERE id = NULL LIMIT 1\" 5682ms","timestamp":"2018-05-15T09:52:12.204Z"}
+{"level":"error","message":"editPrize error: TypeError: Cannot read property 'id' of undefined","timestamp":"2018-05-15T09:52:12.209Z"}
+{"level":"info","message":"POST /api/prize/edit 6402ms","timestamp":"2018-05-15T09:52:12.211Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT count(*) as recordCount FROM fifa_prize\" 23ms","timestamp":"2018-05-15T09:52:12.710Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT * FROM fifa_prize LIMIT 0, 50\" 119ms","timestamp":"2018-05-15T09:52:12.829Z"}
+{"level":"info","message":"GET /api/prize/list?page=1 282ms","timestamp":"2018-05-15T09:52:12.829Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT count(*) as recordCount FROM fifa_prize\" 9ms","timestamp":"2018-05-15T09:52:39.198Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT * FROM fifa_prize LIMIT 0, 50\" 10ms","timestamp":"2018-05-15T09:52:39.208Z"}
+{"level":"info","message":"GET /api/prize/list?page=1 28ms","timestamp":"2018-05-15T09:52:39.208Z"}
+{"level":"info","message":"Redis 连接成功!","timestamp":"2018-05-15T09:53:10.102Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT * FROM fifa_prize WHERE id = '3' LIMIT 1\" 42ms","timestamp":"2018-05-15T09:53:23.317Z"}
+{"level":"info","message":"GET /api/prize/info?prizeId=3 233ms","timestamp":"2018-05-15T09:53:23.318Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT * FROM fifa_prize WHERE id = '3' LIMIT 1\" 415ms","timestamp":"2018-05-15T09:53:23.830Z"}
+{"level":"info","message":"GET /api/prize/info?prizeId=3 460ms","timestamp":"2018-05-15T09:53:23.837Z"}
+{"level":"info","message":"POST Body: {\"prize_name\":\"xxx\",\"prize_count\":1,\"prize_prob\":0.001,\"type\":1}","timestamp":"2018-05-15T09:53:36.819Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT * FROM fifa_prize WHERE id = NULL LIMIT 1\" 11ms","timestamp":"2018-05-15T09:53:36.842Z"}
+{"level":"error","message":"editPrize error: TypeError: Cannot read property 'id' of undefined","timestamp":"2018-05-15T09:53:36.843Z"}
+{"level":"info","message":"POST /api/prize/edit 25ms","timestamp":"2018-05-15T09:53:36.844Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT count(*) as recordCount FROM fifa_prize\" 22ms","timestamp":"2018-05-15T09:53:36.920Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT * FROM fifa_prize LIMIT 0, 50\" 46ms","timestamp":"2018-05-15T09:53:36.966Z"}
+{"level":"info","message":"GET /api/prize/list?page=1 83ms","timestamp":"2018-05-15T09:53:36.967Z"}
+{"level":"info","message":"Redis 连接成功!","timestamp":"2018-05-15T09:59:16.317Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT count(*) as recordCount FROM fifa_prize\" 28ms","timestamp":"2018-05-15T09:59:18.235Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT * FROM fifa_prize LIMIT 0, 50\" 35ms","timestamp":"2018-05-15T09:59:18.271Z"}
+{"level":"info","message":"GET /api/prize/list?page=1 142ms","timestamp":"2018-05-15T09:59:18.272Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT count(*) as recordCount FROM fifa_prize\" 38ms","timestamp":"2018-05-15T09:59:20.944Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT * FROM fifa_prize LIMIT 0, 50\" 21ms","timestamp":"2018-05-15T09:59:20.965Z"}
+{"level":"info","message":"GET /api/prize/list?page=1 343ms","timestamp":"2018-05-15T09:59:20.965Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT count(*) as recordCount FROM fifa_prize\" 33ms","timestamp":"2018-05-15T09:59:33.158Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT * FROM fifa_prize LIMIT 0, 50\" 90ms","timestamp":"2018-05-15T09:59:33.248Z"}
+{"level":"info","message":"GET /api/prize/list?page=1 156ms","timestamp":"2018-05-15T09:59:33.249Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT * FROM fifa_prize WHERE id = '7' LIMIT 1\" 113ms","timestamp":"2018-05-15T09:59:42.964Z"}
+{"level":"info","message":"GET /api/prize/info?prizeId=7 197ms","timestamp":"2018-05-15T09:59:42.965Z"}
+{"level":"info","message":"POST Body: {}","timestamp":"2018-05-15T09:59:59.712Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT * FROM fifa_prize WHERE id = 7 LIMIT 1\" 13ms","timestamp":"2018-05-15T09:59:59.737Z"}
+{"level":"info","message":"EXEC SQL: \"UPDATE fifa_prize SET  WHERE id = 7\" 13ms","timestamp":"2018-05-15T09:59:59.754Z"}
+{"level":"error","message":"editPrize error: Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE id = 7' at line 1","timestamp":"2018-05-15T09:59:59.754Z"}
+{"level":"info","message":"POST /api/prize/edit/7?prize_name=%E5%B0%8F%E7%B1%B37&prize_count=100&prize_prob=0.87&type=1 43ms","timestamp":"2018-05-15T09:59:59.755Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT count(*) as recordCount FROM fifa_prize\" 11ms","timestamp":"2018-05-15T09:59:59.846Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT * FROM fifa_prize LIMIT 0, 50\" 10ms","timestamp":"2018-05-15T09:59:59.857Z"}
+{"level":"info","message":"GET /api/prize/list?page=1 33ms","timestamp":"2018-05-15T09:59:59.858Z"}
+{"level":"info","message":"Redis 连接成功!","timestamp":"2018-05-15T10:04:01.714Z"}
+{"level":"error","message":"getPrizeDetailById error: Error: connect ETIMEDOUT","timestamp":"2018-05-15T10:04:26.024Z"}
+{"level":"info","message":"GET /api/prize/info?prizeId=7 10041ms","timestamp":"2018-05-15T10:04:26.025Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT * FROM fifa_prize WHERE id = '7' LIMIT 1\" 37ms","timestamp":"2018-05-15T10:04:34.895Z"}
+{"level":"info","message":"GET /api/prize/info?prizeId=7 8845ms","timestamp":"2018-05-15T10:04:34.896Z"}
+{"level":"error","message":"getPrize error: Error: connect ETIMEDOUT 203.195.179.210:65","timestamp":"2018-05-15T10:05:07.756Z"}
+{"level":"info","message":"GET /api/prize/list?page=1 17869ms","timestamp":"2018-05-15T10:05:07.756Z"}
+{"level":"error","message":"getPrizeDetailById error: Error: connect ETIMEDOUT 203.195.179.210:65","timestamp":"2018-05-15T10:05:11.665Z"}
+{"level":"info","message":"GET /api/prize/info?prizeId=7 7879ms","timestamp":"2018-05-15T10:05:11.665Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT count(*) as recordCount FROM fifa_prize\" 9ms","timestamp":"2018-05-15T10:05:32.728Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT * FROM fifa_prize LIMIT 0, 50\" 9ms","timestamp":"2018-05-15T10:05:32.739Z"}
+{"level":"info","message":"GET /api/prize/list?page=1 51ms","timestamp":"2018-05-15T10:05:32.739Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT * FROM fifa_prize WHERE id = '7' LIMIT 1\" 13ms","timestamp":"2018-05-15T10:05:39.651Z"}
+{"level":"info","message":"GET /api/prize/info?prizeId=7 24ms","timestamp":"2018-05-15T10:05:39.651Z"}
+{"level":"info","message":"POST Body: {}","timestamp":"2018-05-15T10:05:52.813Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT * FROM fifa_prize WHERE id = 7 LIMIT 1\" 11ms","timestamp":"2018-05-15T10:05:52.837Z"}
+{"level":"info","message":"EXEC SQL: \"UPDATE fifa_prize SET prize_name = NULL, prize_count = NULL, prize_prob = NULL, type = NULL WHERE id = 7\" 10ms","timestamp":"2018-05-15T10:05:52.847Z"}
+{"level":"info","message":"POST /api/prize/edit/7?prize_name=%E5%B0%8F%E7%B1%B37&prize_count=100&prize_prob=0.87&type=1 40ms","timestamp":"2018-05-15T10:05:52.854Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT count(*) as recordCount FROM fifa_prize\" 10ms","timestamp":"2018-05-15T10:05:52.966Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT * FROM fifa_prize LIMIT 0, 50\" 11ms","timestamp":"2018-05-15T10:05:52.977Z"}
+{"level":"info","message":"GET /api/prize/list?page=1 39ms","timestamp":"2018-05-15T10:05:52.977Z"}
+{"level":"info","message":"Redis 连接成功!","timestamp":"2018-05-15T10:10:37.222Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT * FROM fifa_prize WHERE id = '7' LIMIT 1\" 45ms","timestamp":"2018-05-15T10:10:50.073Z"}
+{"level":"info","message":"GET /api/prize/info?prizeId=7 227ms","timestamp":"2018-05-15T10:10:50.074Z"}
+{"level":"info","message":"POST Body: {}","timestamp":"2018-05-15T10:11:14.331Z"}
+{"level":"info","message":"POST /api/prize/edit/7?prize_name=YUYU&prize_count=2&prize_prob=0.5&type=2 4ms","timestamp":"2018-05-15T10:11:14.335Z"}
+{"level":"info","message":"Redis 连接成功!","timestamp":"2018-05-15T10:13:08.261Z"}
+{"level":"info","message":"POST Body: {}","timestamp":"2018-05-15T10:13:22.559Z"}
+{"level":"info","message":"POST /api/prize/edit/7?prize_name=YUYU&prize_count=2&prize_prob=0.5&type=2 4ms","timestamp":"2018-05-15T10:13:22.563Z"}
+{"level":"info","message":"POST Body: {}","timestamp":"2018-05-15T10:13:25.031Z"}
+{"level":"info","message":"POST /api/prize/edit/7?prize_name=YUYU&prize_count=2&prize_prob=0.5&type=2 1ms","timestamp":"2018-05-15T10:13:25.032Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT count(*) as recordCount FROM fifa_prize\" 13ms","timestamp":"2018-05-15T10:14:36.149Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT * FROM fifa_prize LIMIT 0, 50\" 12ms","timestamp":"2018-05-15T10:14:36.161Z"}
+{"level":"info","message":"GET /api/prize/list?page=1 80ms","timestamp":"2018-05-15T10:14:36.161Z"}
+{"level":"info","message":"POST Body: {\"prize_name\":\"Mac\",\"prize_count\":\"2\",\"prize_prob\":\"0.001\",\"type\":1}","timestamp":"2018-05-15T10:14:51.122Z"}
+{"level":"info","message":"EXEC SQL: \"INSERT INTO fifa_prize SET `prize_name` = 'Mac', `prize_count` = '2', `prize_prob` = '0.001', `type` = 1, `gmt_create` = '2018-05-15 18:14:51.135'\" 13ms","timestamp":"2018-05-15T10:14:51.148Z"}
+{"level":"info","message":"POST /api/prize/add 26ms","timestamp":"2018-05-15T10:14:51.149Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT count(*) as recordCount FROM fifa_prize\" 10ms","timestamp":"2018-05-15T10:14:51.204Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT * FROM fifa_prize LIMIT 0, 50\" 10ms","timestamp":"2018-05-15T10:14:51.215Z"}
+{"level":"info","message":"GET /api/prize/list?page=1 32ms","timestamp":"2018-05-15T10:14:51.216Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT count(*) as recordCount FROM fifa_prize\" 10ms","timestamp":"2018-05-15T10:15:34.552Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT * FROM fifa_prize LIMIT 0, 50\" 11ms","timestamp":"2018-05-15T10:15:34.563Z"}
+{"level":"info","message":"GET /api/prize/list?page=1 34ms","timestamp":"2018-05-15T10:15:34.564Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT * FROM fifa_prize WHERE id = '8' LIMIT 1\" 11ms","timestamp":"2018-05-15T10:15:40.504Z"}
+{"level":"info","message":"GET /api/prize/info?prizeId=8 28ms","timestamp":"2018-05-15T10:15:40.504Z"}
+{"level":"info","message":"POST Body: {\"_paths\":{\"prizeId\":8},\"prize_name\":\"Mac4\",\"prize_count\":2,\"prize_prob\":0.001,\"type\":1}","timestamp":"2018-05-15T10:15:52.443Z"}
+{"level":"info","message":"POST /api/prize/edit/$%7BprizeId%7D 2ms","timestamp":"2018-05-15T10:15:52.445Z"}
+{"level":"info","message":"Redis 连接成功!","timestamp":"2018-05-15T10:18:28.540Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT * FROM fifa_prize WHERE id = '8' LIMIT 1\" 66ms","timestamp":"2018-05-15T10:18:42.142Z"}
+{"level":"info","message":"GET /api/prize/info?prizeId=8 231ms","timestamp":"2018-05-15T10:18:42.144Z"}
+{"level":"info","message":"POST Body: {\"prizeId\":8,\"prize_name\":\"Mac0\",\"prize_count\":2,\"prize_prob\":0.001,\"type\":1}","timestamp":"2018-05-15T10:18:57.130Z"}
+{"level":"info","message":"POST /api/prize/edit 5ms","timestamp":"2018-05-15T10:18:57.135Z"}
+{"level":"info","message":"Redis 连接成功!","timestamp":"2018-05-15T10:20:20.343Z"}
+{"level":"info","message":"POST Body: {\"prizeId\":8,\"prize_name\":\"Mac0\",\"prize_count\":2,\"prize_prob\":0.001,\"type\":1}","timestamp":"2018-05-15T10:20:35.856Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT * FROM fifa_prize WHERE id = 8 LIMIT 1\" 15ms","timestamp":"2018-05-15T10:20:35.990Z"}
+{"level":"info","message":"EXEC SQL: \"UPDATE fifa_prize SET prize_name = 'Mac0', prize_count = 2, prize_prob = 0.001, type = 1 WHERE id = 8\" 48ms","timestamp":"2018-05-15T10:20:36.038Z"}
+{"level":"info","message":"POST /api/prize/edit 183ms","timestamp":"2018-05-15T10:20:36.040Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT count(*) as recordCount FROM fifa_prize\" 12ms","timestamp":"2018-05-15T10:20:36.217Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT * FROM fifa_prize LIMIT 0, 50\" 37ms","timestamp":"2018-05-15T10:20:36.254Z"}
+{"level":"info","message":"GET /api/prize/list?page=1 70ms","timestamp":"2018-05-15T10:20:36.254Z"}
+{"level":"info","message":"Redis 连接成功!","timestamp":"2018-05-15T10:27:47.328Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT * FROM fifa_prize WHERE id = '7' LIMIT 1\" 36ms","timestamp":"2018-05-15T10:28:00.249Z"}
+{"level":"info","message":"GET /api/prize/info?prizeId=7 230ms","timestamp":"2018-05-15T10:28:00.250Z"}
+{"level":"info","message":"POST Body: {\"prizeId\":7,\"prize_name\":\"锤子手机\",\"prize_count\":\"10\",\"prize_prob\":\"0.8\",\"type\":1}","timestamp":"2018-05-15T10:28:20.730Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT * FROM fifa_prize WHERE id = 7 LIMIT 1\" 28ms","timestamp":"2018-05-15T10:28:20.772Z"}
+{"level":"info","message":"EXEC SQL: \"UPDATE fifa_prize SET prize_name = '锤子手机', prize_count = '10', prize_prob = '0.8', type = 1 WHERE id = 7\" 11ms","timestamp":"2018-05-15T10:28:20.784Z"}
+{"level":"info","message":"POST /api/prize/edit 55ms","timestamp":"2018-05-15T10:28:20.785Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT count(*) as recordCount FROM fifa_prize\" 9ms","timestamp":"2018-05-15T10:28:20.849Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT * FROM fifa_prize LIMIT 0, 50\" 13ms","timestamp":"2018-05-15T10:28:20.863Z"}
+{"level":"info","message":"GET /api/prize/list?page=1 34ms","timestamp":"2018-05-15T10:28:20.863Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT * FROM fifa_prize WHERE id = '6' LIMIT 1\" 12ms","timestamp":"2018-05-15T10:51:22.453Z"}
+{"level":"info","message":"GET /api/prize/info?prizeId=6 30ms","timestamp":"2018-05-15T10:51:22.455Z"}
+{"level":"info","message":"POST Body: {\"prizeId\":6,\"prize_name\":\"华为荣耀X10\",\"prize_count\":9,\"prize_prob\":0.5,\"type\":2}","timestamp":"2018-05-15T10:51:32.688Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT * FROM fifa_prize WHERE id = 6 LIMIT 1\" 11ms","timestamp":"2018-05-15T10:51:32.709Z"}
+{"level":"info","message":"EXEC SQL: \"UPDATE fifa_prize SET prize_name = '华为荣耀X10', prize_count = 9, prize_prob = 0.5, type = 2 WHERE id = 6\" 10ms","timestamp":"2018-05-15T10:51:32.719Z"}
+{"level":"info","message":"POST /api/prize/edit 34ms","timestamp":"2018-05-15T10:51:32.722Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT count(*) as recordCount FROM fifa_prize\" 9ms","timestamp":"2018-05-15T10:51:32.809Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT * FROM fifa_prize LIMIT 0, 50\" 9ms","timestamp":"2018-05-15T10:51:32.819Z"}
+{"level":"info","message":"GET /api/prize/list?page=1 35ms","timestamp":"2018-05-15T10:51:32.820Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT * FROM fifa_prize WHERE id = '6' LIMIT 1\" 10ms","timestamp":"2018-05-15T10:51:42.341Z"}
+{"level":"info","message":"GET /api/prize/info?prizeId=6 19ms","timestamp":"2018-05-15T10:51:42.341Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT count(*) as recordCount FROM fifa_prize\" 9ms","timestamp":"2018-05-15T10:51:44.082Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT * FROM fifa_prize LIMIT 0, 50\" 10ms","timestamp":"2018-05-15T10:51:44.092Z"}
+{"level":"info","message":"GET /api/prize/list?page=1 28ms","timestamp":"2018-05-15T10:51:44.093Z"}
+{"level":"info","message":"Redis 连接成功!","timestamp":"2018-05-15T10:51:53.961Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT count(*) as recordCount FROM fifa_prize\" 10ms","timestamp":"2018-05-15T10:54:01.705Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT * FROM fifa_prize LIMIT 0, 50\" 10ms","timestamp":"2018-05-15T10:54:01.716Z"}
+{"level":"info","message":"GET /api/prize/list?page=1 32ms","timestamp":"2018-05-15T10:54:01.717Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT count(*) as recordCount FROM fifa_prize\" 9ms","timestamp":"2018-05-15T10:54:24.296Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT * FROM fifa_prize LIMIT 0, 50\" 10ms","timestamp":"2018-05-15T10:54:24.306Z"}
+{"level":"info","message":"GET /api/prize/list?page=1 71ms","timestamp":"2018-05-15T10:54:24.307Z"}

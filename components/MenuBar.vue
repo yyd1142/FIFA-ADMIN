@@ -38,7 +38,7 @@
     },
     mounted() {
       for(let [index, i] of this.tabItems.entries()) {
-          if(i.path === this.$route.name) {
+          if(this.$route.path.indexOf(i.path) != -1) {
             this.activeIndex = index.toString()
           }
       }

@@ -65,5 +65,8 @@ Vue.prototype.$httpPost = httpPost;
 export default {
   userInfo: httpGet('/user'),
   login: httpGet('/login'),
-  getPrizeList: httpGet('/prize/list')
+  getPrizeList: httpGet('/prize/list'),
+  addPrize: httpPost('/prize/add'),
+  prizeDetail: httpGet('/prize/info'),
+  editPrize: httpPost('/prize/edit'),
 }

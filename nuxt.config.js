@@ -45,7 +45,8 @@ module.exports = {
   plugins: [
     '~/plugins/api',
     '~/plugins/element-ui',
-    '~/utils/auth'
+    '~/utils/auth',
+    '~/plugins/filters'
   ],
   css: [
     'element-ui/lib/theme-chalk/index.css',

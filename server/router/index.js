@@ -42,4 +42,32 @@ apiRouter.get('/prize/list', async (ctx, next) => {
   ctx.body = {code: 0, response: response}
 })
 
+apiRouter.post('/prize/add', async (ctx, next) => {
+  let body = ctx.request.body;
+  await prizeDBAction.addPrize(body);
+  ctx.body = {code: 0};
+})
+
+apiRouter.get('/prize/info', async (ctx, next) => {
+  let result = await prizeDBAction.getPrizeDetailById(ctx.query.prizeId);
+  if (result) {
+    ctx.body = {
+      code: 0,
+      response: result
+    }
+  } else {
+    ctx.body = {
+      code: 2,
+      response: null
+    }
+  }
+})
+
+apiRouter.post('/prize/edit', async (ctx, next) => {
+  let body = ctx.request.body;
+  let prizeId = parseInt(body.prizeId);
+  await prizeDBAction.editPrize(prizeId, body);
+  ctx.body = {code: 0};
+})
+
 module.exports = [apiRouter.routes()];
