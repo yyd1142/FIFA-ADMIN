@@ -3,7 +3,30 @@
     <div class="prize-wrap" slot="page">
       <el-button class="add-btn" type="primary" icon="el-icon-plus" @click="addPrize"></el-button>
       <el-tabs v-model="activeName" @tab-click="handleClick" type="border-card">
-        <el-tab-pane label="奖品列表" name="first">
+        <el-tab-pane label="奖品列表" name="one">
+          <el-table :data="tableData" style="width: 100%">
+            <el-table-column prop="prize_name" label="奖品名称" width="340"></el-table-column>
+            <el-table-column prop="prize_prob" label="中奖概率" width="180"></el-table-column>
+            <el-table-column prop="prize_count" label="奖品库存" width="180"></el-table-column>
+            <el-table-column label="是否线上" width="180">
+              <template slot-scope="scope">
+                <span>{{scope.row.type === 2 ? '否' : '是'}}</span>
+              </template>
+            </el-table-column>
+            <el-table-column label="创建时间">
+              <template slot-scope="scope">
+                <span>{{scope.row.gmt_create | formatDate}}</span>
+              </template>
+            </el-table-column>
+            <el-table-column fixed="right" label="操作" width="100">
+              <template slot-scope="scope">
+                <!--<el-button class="warning-font" type="text" size="small">删除</el-button>-->
+                <el-button type="text" size="small" @click="editPrize(scope.row.id)">编辑</el-button>
+              </template>
+            </el-table-column>
+          </el-table>
+        </el-tab-pane>
+        <el-tab-pane label="中奖名单" name="two">
           <el-table :data="tableData" style="width: 100%">
             <el-table-column prop="prize_name" label="奖品名称" width="240"></el-table-column>
             <el-table-column prop="prize_prob" label="中奖概率" width="180"></el-table-column>
@@ -48,7 +71,7 @@
       return {
         prizeDatas: result,
         currentPage: currentPage,
-        activeName: 'first',
+        activeName: 'one',
         tableData: result.response.datas,
         totalPage: result.response.pageCount * 10
       }

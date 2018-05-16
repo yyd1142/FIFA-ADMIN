@@ -41,7 +41,7 @@
             password: md5(this.formData.password)
           }).then(result => {
             if (result.code === 0) {
-              this.$router.replace('/prize');
+              this.$router.replace('/team');
               setUser(result.data);
               this.$store.commit('SET_USER', result.data);
             } else {

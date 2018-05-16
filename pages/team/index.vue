@@ -2,12 +2,34 @@
   <root-page>
     <div class="team-wrap" slot="page">
       <el-tabs v-model="activeName" @tab-click="handleClick" type="border-card">
-        <el-tab-pane label="赛事管理" name="first">
-          <el-table
-            :data="tableData"
-            style="width: 100%"
-            :default-sort="{prop: 'date', order: 'descending'}"
-          >
+        <el-tab-pane label="站队" name="one">
+          <el-table :data="tableData" style="width: 100%">
+            <el-table-column label="活动类型" width="180">
+              <template slot-scope="scope">
+                <span>线上活动</span>
+              </template>
+            </el-table-column>
+            <el-table-column prop="open_id" label="微信openId" width="280"></el-table-column>
+            <el-table-column label="参与时间" width="180">
+              <template slot-scope="scope">
+                <span>{{scope.row.gmt_create | formatDate}}</span>
+              </template>
+            </el-table-column>
+            <el-table-column prop="nation_name" label="支持球队" width="180"> </el-table-column>
+            <el-table-column label="是否猜中" width="180">
+              <template slot-scope="scope">
+                <span>{{scope.row.winner ? (scope.row.winner === scope.row.nation_name ? '是' : '否') : '待定'}}</span>
+              </template>
+            </el-table-column>
+            <el-table-column label="是否中奖">
+              <template slot-scope="scope">
+                <span>{{scope.row.lotteryId ? '是' : '否'}}</span>
+              </template>
+            </el-table-column>
+          </el-table>
+        </el-tab-pane>
+        <el-tab-pane label="刷脸" name="two">
+          <el-table :data="tableData" style="width: 100%" :default-sort="{prop: 'date', order: 'descending'}">
             <el-table-column
               prop="date"
               label="日期"
@@ -27,43 +49,44 @@
             </el-table-column>
           </el-table>
         </el-tab-pane>
+        <el-pagination class="pagination-wrap" :current-page="currentPage" background layout="prev, pager, next"
+                       :total="totalPage"
+                       @current-change="handleCurrentChange"></el-pagination>
       </el-tabs>
     </div>
   </root-page>
 </template>
 
 <script>
+  import api from '~/plugins/api';
   import RootPage from '../index.vue';
 
   export default {
-    data() {
+    async asyncData(ctx){
+      let currentPage = 1;
+      if (ctx.query.page) currentPage = parseInt(ctx.query.page);
+      let result = await api.getTeamList({
+        page: currentPage
+      });
       return {
-        activeName: 'first',
-        tableData: [{
-          date: '2016-05-02',
-          name: '王小虎',
-          address: '上海市普陀区金沙江路 1518 弄'
-        }, {
-          date: '2016-05-04',
-          name: '王小虎',
-          address: '上海市普陀区金沙江路 1517 弄'
-        }, {
-          date: '2016-05-01',
-          name: '王小虎',
-          address: '上海市普陀区金沙江路 1519 弄'
-        }, {
-          date: '2016-05-03',
-          name: '王小虎',
-          address: '上海市普陀区金沙江路 1516 弄'
-        }]
-      };
+        prizeDatas: result,
+        currentPage: currentPage,
+        activeName: 'one',
+        tableData: result.response.datas,
+        totalPage: result.response.pageCount * 10
+      }
     },
     methods: {
       handleClick(tab, event) {
         console.log(tab, event);
       },
-      formatter(row, column) {
-        return row.address;
+      handleCurrentChange(e) {
+        this.$router.push({
+          path: '/team',
+          query: {
+            page: e
+          }
+        })
       }
     },
     components: {

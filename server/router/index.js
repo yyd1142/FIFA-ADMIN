@@ -3,15 +3,15 @@
  */
 
 const KoaRouter = require('koa-router')
-const LeftPad = require("left-pad")
 const UserDBAction = require('../database/UserDBAction')
 const PrizeDBAction = require('../database/PrizeDBAction')
-
+const TeamDBAction = require('../database/TeamDBAction')
 const apiRouter = KoaRouter({
   prefix: '/api'
 })
 const userDBAction = new UserDBAction();
-const prizeDBAction = new PrizeDBAction()
+const prizeDBAction = new PrizeDBAction();
+const teamDBAction = new TeamDBAction();
 
 apiRouter.get('/login', async (ctx, next) => {
   let username = ctx.query.username;
@@ -68,6 +68,11 @@ apiRouter.post('/prize/edit', async (ctx, next) => {
   let prizeId = parseInt(body.prizeId);
   await prizeDBAction.editPrize(prizeId, body);
   ctx.body = {code: 0};
+})
+
+apiRouter.get('/team/list', async (ctx, next) => {
+  let response = await teamDBAction.getTeam();
+  ctx.body = {code: 0, response: response}
 })
 
 module.exports = [apiRouter.routes()];

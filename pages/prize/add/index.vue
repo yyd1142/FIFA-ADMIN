@@ -17,10 +17,17 @@
             <el-form-item label="中奖概率" prop="prize_prob">
               <el-input v-model="form.prize_prob" type="number"></el-input>
             </el-form-item>
-            <el-form-item label="线上奖品" prop="type">
+            <el-form-item class="prize-radio" label="线上奖品" prop="type">
               <el-radio-group v-model="form.type">
-                <el-radio label="是"></el-radio>
-                <el-radio label="否"></el-radio>
+                <el-radio :label="1">是</el-radio>
+                <el-radio :label="2">否</el-radio>
+              </el-radio-group>
+            </el-form-item>
+            <el-form-item class="prize-radio" label="演唱会门票" prop="zoning" v-if="form.type === 2">
+              <el-radio-group v-model="form.zoning">
+                <el-radio :label="1">佛山</el-radio>
+                <el-radio :label="2">杭州</el-radio>
+                <el-radio :label="3">天津</el-radio>
               </el-radio-group>
             </el-form-item>
             <el-form-item>
@@ -60,7 +67,8 @@
           prize_name: '',
           prize_count: '',
           prize_prob: '',
-          type: ''
+          type: '',
+          zoning: ''
         }
       }
     },
@@ -83,12 +91,16 @@
         });
       },
       addPrize() {
-        api.addPrize({}, {
+        let postBody = {
           prize_name: this.form.prize_name,
           prize_count: this.form.prize_count,
           prize_prob: this.form.prize_prob,
-          type: this.form.type === '是' ? 1 : 2
-        }).then(result => {
+          type: this.form.type
+        }
+        if(postBody.type === 2 && this.form.zoning) {
+            postBody['zoning'] = this.form.zoning;
+        }
+        api.addPrize({}, postBody).then(result => {
           if (result && result.code == 0) {
             this.$router.go(-1);
           } else {
@@ -113,6 +125,11 @@
     box-sizing: border-box;
     .tabs-wrap {
       margin-top: 15px;
+      .prize-radio {
+        .el-form-item__label {
+          width: 88px !important;
+        }
+      }
     }
   }
 </style>

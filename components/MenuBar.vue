@@ -24,15 +24,11 @@
       return {
         activeIndex: null,
         tabItems: [{
-          id: 0, routeName: '奖品管理', path: 'prize', icon: 'el-icon-star-off'
+          id: 0, routeName: '参与人员', path: 'team', icon: 'el-icon-goods'
         }, {
-          id: 1, routeName: '赛事管理', path: 'team', icon: 'el-icon-goods'
+          id: 1, routeName: '奖品管理', path: 'prize', icon: 'el-icon-star-off'
         }, {
-          id: 2, routeName: '用户管理', path: 'user', icon: 'el-icon-tickets'
-        }, {
-          id: 3, routeName: '数据统计', path: 'statistics', icon: 'el-icon-news'
-        }, {
-          id: 4, routeName: '设置', path: 'setting', icon: 'el-icon-setting'
+          id: 2, routeName: '设置', path: 'setting', icon: 'el-icon-setting'
         }]
       }
     },

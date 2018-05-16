@@ -13,7 +13,7 @@ export default function ({isServer, store, req, redirect, route}) {
   } else {
     store.commit('SET_USER', loggedUser);
     if (route.name === 'login') {
-      return redirect(`/prize`)
+      return redirect(`/team`)
     }
   }
 }

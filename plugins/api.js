@@ -69,4 +69,5 @@ export default {
   addPrize: httpPost('/prize/add'),
   prizeDetail: httpGet('/prize/info'),
   editPrize: httpPost('/prize/edit'),
+  getTeamList: httpGet('/team/list'),
 }

@@ -10,7 +10,6 @@
         placement="bottom"
         width="200"
         trigger="hover">
-        <el-dropdown-item>个人中心</el-dropdown-item>
         <el-dropdown-item>修改密码</el-dropdown-item>
         <el-dropdown-item>退出账号</el-dropdown-item>
         <div class="header-image" slot="reference"></div>
