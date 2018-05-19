@@ -33,10 +33,10 @@
       }
     },
     mounted() {
-      for(let [index, i] of this.tabItems.entries()) {
-          if(this.$route.path.indexOf(i.path) != -1) {
-            this.activeIndex = index.toString()
-          }
+      for (let [index, i] of this.tabItems.entries()) {
+        if (this.$route.path.indexOf(i.path) != -1) {
+          this.activeIndex = index.toString()
+        }
       }
     },
     methods: {
@@ -47,6 +47,8 @@
         console.log(key, keyPath);
       },
       linkPath(path) {
+        if (path === 'team') path = `${path}?name=one`;
+        if (path === 'prize') path = `${path}?name=one`;
         this.$router.push(`/${path}`);
       }
     }

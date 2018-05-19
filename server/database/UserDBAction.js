@@ -42,6 +42,26 @@ class UserDBAction extends MKODBAction {
     }
     return dataResult;
   }
+
+  async getRecordByID(id, fields) {
+    let dbConnection = null
+    fields = fields || '*'
+    let dataResult = null
+    try {
+      dbConnection = await this.getDBConnection()
+      let sql = `SELECT ${fields} FROM ${this.tableName} WHERE id = ? LIMIT 1`
+      dataResult = await this.execSQL(sql, [id], dbConnection)
+      if (dataResult && dataResult.length > 0) {
+        dataResult = dataResult[0]
+      }
+    } catch (e) {
+      LOGGER.error(`getRecordByID error: ${e.toString()}`)
+    } finally {
+      if (dbConnection)
+        dbConnection.release()
+    }
+    return dataResult
+  }
 }
 
 module.exports = UserDBAction;

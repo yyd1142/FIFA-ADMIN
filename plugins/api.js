@@ -70,4 +70,8 @@ export default {
   prizeDetail: httpGet('/prize/info'),
   editPrize: httpPost('/prize/edit'),
   getTeamList: httpGet('/team/list'),
+  getSLTeamList: httpGet('/slTeam/list'),
+  getLottery: httpGet('/lottery/list'),
+  editAddress: httpPost('/lottery/address/edit'),
+  updatePassord: httpPost('/setting/updatepwd'),
 }

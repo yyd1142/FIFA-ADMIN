@@ -23,8 +23,8 @@
                 <el-radio :label="2">否</el-radio>
               </el-radio-group>
             </el-form-item>
-            <el-form-item class="prize-radio" label="演唱会门票" prop="zoning" v-if="form.type === 2">
-              <el-radio-group v-model="form.zoning">
+            <el-form-item class="prize-radio" label="演唱会门票" prop="area" v-if="form.type === 2">
+              <el-radio-group v-model="form.area">
                 <el-radio :label="1">佛山</el-radio>
                 <el-radio :label="2">杭州</el-radio>
                 <el-radio :label="3">天津</el-radio>
@@ -68,7 +68,7 @@
           prize_count: '',
           prize_prob: '',
           type: '',
-          zoning: ''
+          area: ''
         }
       }
     },
@@ -97,8 +97,8 @@
           prize_prob: this.form.prize_prob,
           type: this.form.type
         }
-        if(postBody.type === 2 && this.form.zoning) {
-            postBody['zoning'] = this.form.zoning;
+        if(postBody.type === 2 && this.form.area) {
+            postBody['area'] = this.form.area;
         }
         api.addPrize({}, postBody).then(result => {
           if (result && result.code == 0) {

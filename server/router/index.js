@@ -6,12 +6,14 @@ const KoaRouter = require('koa-router')
 const UserDBAction = require('../database/UserDBAction')
 const PrizeDBAction = require('../database/PrizeDBAction')
 const TeamDBAction = require('../database/TeamDBAction')
+const SettingDBAction = require('../database/SettingDBAction')
 const apiRouter = KoaRouter({
   prefix: '/api'
 })
 const userDBAction = new UserDBAction();
 const prizeDBAction = new PrizeDBAction();
 const teamDBAction = new TeamDBAction();
+const settingDBAction = new SettingDBAction();
 
 apiRouter.get('/login', async (ctx, next) => {
   let username = ctx.query.username;
@@ -73,6 +75,51 @@ apiRouter.post('/prize/edit', async (ctx, next) => {
 apiRouter.get('/team/list', async (ctx, next) => {
   let response = await teamDBAction.getTeam();
   ctx.body = {code: 0, response: response}
+})
+
+apiRouter.get('/slTeam/list', async (ctx, next) => {
+  let response = await teamDBAction.getSLTeam();
+  ctx.body = {code: 0, response: response}
+})
+
+apiRouter.get('/lottery/list', async (ctx, next) => {
+  let response = await  prizeDBAction.getLottery();
+  ctx.body = {code: 0, response: response}
+})
+
+apiRouter.post('/lottery/address/edit', async(ctx, next) => {
+  let body = ctx.request.body;
+  let openId = body.openId;
+  await prizeDBAction.editLotteryAddressByOpenID(openId, body);
+  ctx.body = {code: 0};
+})
+
+apiRouter.post('/setting/updatepwd', async(ctx, next) => {
+  let body = ctx.request.body;
+  let password = body.password;
+  let newPassword = body.newPassword;
+  let userId = parseInt(ctx.cookies.get('id'));
+  console.log(userId);
+  if (Number.isNaN(userId)){
+    ctx.body = {code: 1, msg: '非法用户，无权操作'};
+    return;
+  }
+  let userInfo = await userDBAction.getRecordByID(userId);
+  if (!userInfo){
+    ctx.body = {code: 1, msg: '非法用户，无权操作'};
+    return;
+  }
+  if (userInfo.password === password){
+    await settingDBAction.editPwdById(newPassword, userId);
+    ctx.body = {code: 0};
+  }else {
+    ctx.body = {code: 1, msg: '修改密码失败，原密码错误'};
+  }
+})
+
+apiRouter.get('/update/rank', async(ctx, next) => {
+  let response = await prizeDBAction.updateRank();
+  ctx.body = {code: 0, response: response};
 })
 
 module.exports = [apiRouter.routes()];

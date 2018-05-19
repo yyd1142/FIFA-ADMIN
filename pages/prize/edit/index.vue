@@ -15,7 +15,7 @@
               <el-input v-model="form.prize_count" type="number"></el-input>
             </el-form-item>
             <el-form-item label="中奖概率" prop="prize_prob">
-              <el-input v-model="form.prize_prob" type="number"></el-input>
+              <el-input v-model="form.prize_prob" type="number" @focus="handleFocusInput(form.prize_prob)"></el-input>
             </el-form-item>
             <el-form-item label="线上奖品" prop="type">
               <el-radio-group v-model="form.type">
@@ -40,14 +40,14 @@
 
   export default {
     async asyncData(ctx){
-        let info = {
-          prize_name: '',
-          prize_count: '',
-          prize_prob: '',
-          type: ''
-        }
-        let result = await api.prizeDetail({ prizeId: ctx.query.prizeId });
-        info = result.response;
+      let info = {
+        prize_name: '',
+        prize_count: '',
+        prize_prob: '',
+        type: ''
+      }
+      let result = await api.prizeDetail({prizeId: ctx.query.prizeId});
+      info = result.response;
       info.type = info.type === 1 ? '是' : '否';
       return {
         activeName: 'first',
@@ -100,6 +100,14 @@
             this.$message.error('编辑失败，请重试');
           }
         })
+      },
+      handleFocusInput(p) {
+        this.$notify({
+          title: '警告',
+          message: '中奖概率为重要数据，请慎重修改！',
+          type: 'warning',
+          position: 'top-left'
+        });
       }
     },
     components: {
