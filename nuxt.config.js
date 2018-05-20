@@ -14,7 +14,15 @@ module.exports = {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
-    ]
+    ],
+    script: [
+      {
+        async: 'async',
+        defer: 'defer',
+        type: 'text/javascript',
+        src: '/js/canvas.js'
+      }
+    ],
   },
   /*
   ** Customize the progress bar color

@@ -20,7 +20,7 @@ class PrizeDBAction extends MKODBAction {
     this.tableName = 'fifa_prize';
   }
 
-  async getPrize(page = 1, count = 50) {
+  async getPrize(page = 1, count = 20) {
     let dbConnection = null
     let dataResult = null
     try {
@@ -107,7 +107,7 @@ class PrizeDBAction extends MKODBAction {
     }
   }
 
-  async getLottery(page = 1, count = 50) {
+  async getLottery(page = 1, count = 20) {
     let dbConnection = null
     let dataResult = null
     try {

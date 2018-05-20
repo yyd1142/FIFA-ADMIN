@@ -68,6 +68,7 @@
     async asyncData(ctx){
       let currentPage = 1;
       let slCurrentPage = 1;
+      let activeName = ctx.query.name || 'one';
       if (ctx.query.page && ctx.query.name === 'one') currentPage = parseInt(ctx.query.page);
       if (ctx.query.page && ctx.query.name === 'two') slCurrentPage = parseInt(ctx.query.page);
       let result = await api.getTeamList({
@@ -80,7 +81,7 @@
         prizeDatas: result,
         currentPage: currentPage,
         slCurrentPage: slCurrentPage,
-        activeName: 'one',
+        activeName: activeName,
         tableData: result.response.datas,
         totalPage: result.response.pageCount * 10,
         slTableData: slResult.response.datas,
@@ -89,7 +90,12 @@
     },
     methods: {
       handleClick(tab, event) {
-        let page = tab.name === 'one' ? this.currentPage : this.slCurrentPage;
+        let page = null;
+        if (tab.name === 'one') {
+          page = this.currentPage;
+        } else {
+          page = this.slCurrentPage;
+        }
         this.$router.push({
           path: '/team',
           query: {
@@ -99,13 +105,7 @@
         })
       },
       handleCurrentChange(e) {
-        this.$router.push({
-          path: '/team',
-          query: {
-            page: e,
-            name: this.activeName
-          }
-        })
+        window.location.href = `/team?page=${e}&name=${this.activeName}`;
       }
     },
     components: {

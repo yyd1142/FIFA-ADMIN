@@ -73,12 +73,12 @@ apiRouter.post('/prize/edit', async (ctx, next) => {
 })
 
 apiRouter.get('/team/list', async (ctx, next) => {
-  let response = await teamDBAction.getTeam();
+  let response = await teamDBAction.getTeam(ctx.query.page, 20);
   ctx.body = {code: 0, response: response}
 })
 
 apiRouter.get('/slTeam/list', async (ctx, next) => {
-  let response = await teamDBAction.getSLTeam();
+  let response = await teamDBAction.getSLTeam(ctx.query.page, 20);
   ctx.body = {code: 0, response: response}
 })
 

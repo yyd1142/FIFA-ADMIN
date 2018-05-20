@@ -57,10 +57,12 @@
 
 <style lang="less">
   .menu-bar-wrap {
-    width: 100%;
-    position: relative;
-    height: 100vh;
+    width: 8.33333%;
+    position: fixed;
+    height: 100%;
     background-color: #626971;
+    left: 0;
+    top: 64px;
     .menu-item {
       .el-menu {
         border-style: none;

@@ -1,13 +1,14 @@
 <template>
   <div class="index-page-wrap">
     <div class="login-wrap">
+      <div class="fifa-logo"></div>
       <el-card class="box-card">
-        <div class=""></div>
         <el-input class="login-cell" v-model="formData.username" placeholder="请输入账号"></el-input>
         <el-input type="password" class="login-cell" v-model="formData.password" placeholder="请输入密码"></el-input>
         <el-checkbox class="login-cell" v-model="checked">一周内记住密码</el-checkbox>
         <el-button class="login-cell login-btn" type="primary" @click="login">登&nbsp;&nbsp;录</el-button>
       </el-card>
+      <canvas id="c_n1"></canvas>
     </div>
   </div>
 </template>
@@ -74,6 +75,17 @@
       margin: auto;
       left: 0;
       right: 0;
+      .fifa-logo {
+        background: url("/static/images/fifa128.png") 0 0 no-repeat;
+        background-size: cover;
+        width: 128px;
+        height: 128px;
+        position: absolute;
+        top: -106px;
+        left: 0;
+        right: 0;
+        margin: auto;
+      }
       .box-card {
         width: 300px;
         .login-cell {

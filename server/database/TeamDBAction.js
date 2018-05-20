@@ -9,7 +9,7 @@ class TeamDBAction extends MKODBAction {
     this.tableName = 'fifa_team';
   }
 
-  async getTeam(page = 1, count = 50) {
+  async getTeam(page = 1, count = 20) {
     let dbConnection = null;
     let dataResult = null;
     try {
@@ -35,7 +35,7 @@ class TeamDBAction extends MKODBAction {
     return dataResult;
   }
 
-  async getSLTeam(page = 1, count = 50) {
+  async getSLTeam(page = 1, count = 20) {
     let dbConnection = null;
     let dataResult = null;
     try {
