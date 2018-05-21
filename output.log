@@ -1952,3 +1952,18 @@
 {"level":"info","message":"EXEC SQL: \"SELECT * FROM fifa_image LIMIT 0, 20\" 22ms","timestamp":"2018-05-21T03:47:52.409Z"}
 {"level":"info","message":"GET /api/slTeam/list?page=1 69ms","timestamp":"2018-05-21T03:47:52.410Z"}
 {"level":"info","message":"Redis 连接成功!","timestamp":"2018-05-21T05:53:01.836Z"}
+{"level":"info","message":"Redis 连接成功!","timestamp":"2018-05-21T08:03:56.086Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT * FROM fifa_admin_user WHERE user_name = 'admin' AND password = 'e10adc3949ba59abbe56e057f20f883e' LIMIT 1\" 16ms","timestamp":"2018-05-21T09:29:21.641Z"}
+{"level":"info","message":"GET /api/login?username=admin&password=e10adc3949ba59abbe56e057f20f883e 39ms","timestamp":"2018-05-21T09:29:21.646Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT count(*) as recordCount FROM fifa_team\" 11ms","timestamp":"2018-05-21T09:29:36.833Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT a.id , b.type, b.open_id , b.gmt_create , b.nation_name , a.winner , c.id lotteryId FROM fifa_competition a LEFT JOIN fifa_team b ON a.id = b.competition_id LEFT JOIN fifa_lottery c ON a.id = c.competition_id WHERE b.open_id IS NOT NULL LIMIT 0, 20\" 13ms","timestamp":"2018-05-21T09:29:36.846Z"}
+{"level":"info","message":"GET /api/team/list?page=1 35ms","timestamp":"2018-05-21T09:29:36.846Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT count(*) as recordCount FROM fifa_image\" 12ms","timestamp":"2018-05-21T09:29:36.883Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT * FROM fifa_image LIMIT 0, 20\" 13ms","timestamp":"2018-05-21T09:29:36.896Z"}
+{"level":"info","message":"GET /api/slTeam/list?page=1 36ms","timestamp":"2018-05-21T09:29:36.896Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT count(*) as recordCount FROM fifa_prize\" 10ms","timestamp":"2018-05-21T09:29:39.286Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT * FROM fifa_prize LIMIT 0, 20\" 12ms","timestamp":"2018-05-21T09:29:39.298Z"}
+{"level":"info","message":"GET /api/prize/list?page=1 34ms","timestamp":"2018-05-21T09:29:39.299Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT count(*) as recordCount FROM fifa_lottery a LEFT JOIN fifa_prize b ON a.prize_id = b.id LEFT JOIN fifa_user c ON c.open_id = a.open_id\" 11ms","timestamp":"2018-05-21T09:29:39.337Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT a.id , a.open_id , a.gmt_create , b.prize_name , c.address , c.name , c.phone , c.area , c.zip_code FROM fifa_lottery a LEFT JOIN fifa_prize b ON a.prize_id = b.id LEFT JOIN fifa_user c ON c.open_id = a.open_id LIMIT 0, 20\" 13ms","timestamp":"2018-05-21T09:29:39.351Z"}
+{"level":"info","message":"GET /api/lottery/list?page=1 37ms","timestamp":"2018-05-21T09:29:39.352Z"}
