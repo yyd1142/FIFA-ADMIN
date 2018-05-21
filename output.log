@@ -1712,3 +1712,243 @@
 {"level":"info","message":"EXEC SQL: \"SELECT count(*) as recordCount FROM fifa_lottery a LEFT JOIN fifa_prize b ON a.prize_id = b.id LEFT JOIN fifa_user c ON c.open_id = a.open_id\" 14ms","timestamp":"2018-05-20T02:55:01.535Z"}
 {"level":"info","message":"EXEC SQL: \"SELECT a.id , a.open_id , a.gmt_create , b.prize_name , c.address , c.name , c.phone , c.area , c.zip_code FROM fifa_lottery a LEFT JOIN fifa_prize b ON a.prize_id = b.id LEFT JOIN fifa_user c ON c.open_id = a.open_id LIMIT 0, 20\" 18ms","timestamp":"2018-05-20T02:55:01.555Z"}
 {"level":"info","message":"GET /api/lottery/list?page=1 51ms","timestamp":"2018-05-20T02:55:01.555Z"}
+{"level":"info","message":"Redis 连接成功!","timestamp":"2018-05-21T01:46:48.735Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT count(*) as recordCount FROM fifa_team\" 14ms","timestamp":"2018-05-21T01:47:34.626Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT a.id , b.type, b.open_id , b.gmt_create , b.nation_name , a.winner , c.id lotteryId FROM fifa_competition a LEFT JOIN fifa_team b ON a.id = b.competition_id LEFT JOIN fifa_lottery c ON a.id = c.competition_id WHERE b.open_id IS NOT NULL LIMIT 0, 20\" 15ms","timestamp":"2018-05-21T01:47:34.641Z"}
+{"level":"info","message":"GET /api/team/list?page=1 118ms","timestamp":"2018-05-21T01:47:34.644Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT count(*) as recordCount FROM fifa_image\" 10ms","timestamp":"2018-05-21T01:47:34.675Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT * FROM fifa_image LIMIT 0, 20\" 11ms","timestamp":"2018-05-21T01:47:34.688Z"}
+{"level":"info","message":"GET /api/slTeam/list?page=1 35ms","timestamp":"2018-05-21T01:47:34.688Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT count(*) as recordCount FROM fifa_team\" 11ms","timestamp":"2018-05-21T01:50:11.936Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT a.id , b.type, b.open_id , b.gmt_create , b.nation_name , a.winner , c.id lotteryId FROM fifa_competition a LEFT JOIN fifa_team b ON a.id = b.competition_id LEFT JOIN fifa_lottery c ON a.id = c.competition_id WHERE b.open_id IS NOT NULL LIMIT 0, 20\" 12ms","timestamp":"2018-05-21T01:50:11.948Z"}
+{"level":"info","message":"GET /api/team/list?page=1 35ms","timestamp":"2018-05-21T01:50:11.949Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT count(*) as recordCount FROM fifa_image\" 11ms","timestamp":"2018-05-21T01:50:11.981Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT * FROM fifa_image LIMIT 0, 20\" 16ms","timestamp":"2018-05-21T01:50:11.997Z"}
+{"level":"info","message":"GET /api/slTeam/list?page=1 37ms","timestamp":"2018-05-21T01:50:11.997Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT count(*) as recordCount FROM fifa_team\" 11ms","timestamp":"2018-05-21T01:50:23.468Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT a.id , b.type, b.open_id , b.gmt_create , b.nation_name , a.winner , c.id lotteryId FROM fifa_competition a LEFT JOIN fifa_team b ON a.id = b.competition_id LEFT JOIN fifa_lottery c ON a.id = c.competition_id WHERE b.open_id IS NOT NULL LIMIT 0, 20\" 11ms","timestamp":"2018-05-21T01:50:23.479Z"}
+{"level":"info","message":"GET /api/team/list?page=1 35ms","timestamp":"2018-05-21T01:50:23.480Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT count(*) as recordCount FROM fifa_image\" 12ms","timestamp":"2018-05-21T01:50:23.504Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT * FROM fifa_image LIMIT 0, 20\" 19ms","timestamp":"2018-05-21T01:50:23.524Z"}
+{"level":"info","message":"GET /api/slTeam/list?page=1 42ms","timestamp":"2018-05-21T01:50:23.525Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT count(*) as recordCount FROM fifa_team\" 16ms","timestamp":"2018-05-21T01:52:02.219Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT a.id , b.type, b.open_id , b.gmt_create , b.nation_name , a.winner , c.id lotteryId FROM fifa_competition a LEFT JOIN fifa_team b ON a.id = b.competition_id LEFT JOIN fifa_lottery c ON a.id = c.competition_id WHERE b.open_id IS NOT NULL LIMIT 0, 20\" 12ms","timestamp":"2018-05-21T01:52:02.232Z"}
+{"level":"info","message":"GET /api/team/list?page=1 83ms","timestamp":"2018-05-21T01:52:02.233Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT count(*) as recordCount FROM fifa_image\" 11ms","timestamp":"2018-05-21T01:52:02.257Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT * FROM fifa_image LIMIT 0, 20\" 12ms","timestamp":"2018-05-21T01:52:02.269Z"}
+{"level":"info","message":"GET /api/slTeam/list?page=1 33ms","timestamp":"2018-05-21T01:52:02.269Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT count(*) as recordCount FROM fifa_team\" 11ms","timestamp":"2018-05-21T01:57:31.287Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT a.id , b.type, b.open_id , b.gmt_create , b.nation_name , a.winner , c.id lotteryId FROM fifa_competition a LEFT JOIN fifa_team b ON a.id = b.competition_id LEFT JOIN fifa_lottery c ON a.id = c.competition_id WHERE b.open_id IS NOT NULL LIMIT 0, 20\" 12ms","timestamp":"2018-05-21T01:57:31.300Z"}
+{"level":"info","message":"GET /api/team/list?page=1 36ms","timestamp":"2018-05-21T01:57:31.300Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT count(*) as recordCount FROM fifa_image\" 10ms","timestamp":"2018-05-21T01:57:31.323Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT * FROM fifa_image LIMIT 0, 20\" 14ms","timestamp":"2018-05-21T01:57:31.337Z"}
+{"level":"info","message":"GET /api/slTeam/list?page=1 34ms","timestamp":"2018-05-21T01:57:31.337Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT count(*) as recordCount FROM fifa_team\" 10ms","timestamp":"2018-05-21T01:59:34.355Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT a.id , b.type, b.open_id , b.gmt_create , b.nation_name , a.winner , c.id lotteryId FROM fifa_competition a LEFT JOIN fifa_team b ON a.id = b.competition_id LEFT JOIN fifa_lottery c ON a.id = c.competition_id WHERE b.open_id IS NOT NULL LIMIT 0, 20\" 11ms","timestamp":"2018-05-21T01:59:34.367Z"}
+{"level":"info","message":"GET /api/team/list?page=1 33ms","timestamp":"2018-05-21T01:59:34.367Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT count(*) as recordCount FROM fifa_image\" 10ms","timestamp":"2018-05-21T01:59:34.396Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT * FROM fifa_image LIMIT 0, 20\" 11ms","timestamp":"2018-05-21T01:59:34.408Z"}
+{"level":"info","message":"GET /api/slTeam/list?page=1 36ms","timestamp":"2018-05-21T01:59:34.409Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT count(*) as recordCount FROM fifa_team\" 11ms","timestamp":"2018-05-21T02:00:18.690Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT a.id , b.type, b.open_id , b.gmt_create , b.nation_name , a.winner , c.id lotteryId FROM fifa_competition a LEFT JOIN fifa_team b ON a.id = b.competition_id LEFT JOIN fifa_lottery c ON a.id = c.competition_id WHERE b.open_id IS NOT NULL LIMIT 0, 20\" 13ms","timestamp":"2018-05-21T02:00:18.703Z"}
+{"level":"info","message":"GET /api/team/list?page=1 36ms","timestamp":"2018-05-21T02:00:18.704Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT count(*) as recordCount FROM fifa_image\" 12ms","timestamp":"2018-05-21T02:00:18.733Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT * FROM fifa_image LIMIT 0, 20\" 14ms","timestamp":"2018-05-21T02:00:18.749Z"}
+{"level":"info","message":"GET /api/slTeam/list?page=1 39ms","timestamp":"2018-05-21T02:00:18.749Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT count(*) as recordCount FROM fifa_team\" 10ms","timestamp":"2018-05-21T02:03:26.815Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT a.id , b.type, b.open_id , b.gmt_create , b.nation_name , a.winner , c.id lotteryId FROM fifa_competition a LEFT JOIN fifa_team b ON a.id = b.competition_id LEFT JOIN fifa_lottery c ON a.id = c.competition_id WHERE b.open_id IS NOT NULL LIMIT 0, 20\" 10ms","timestamp":"2018-05-21T02:03:26.826Z"}
+{"level":"info","message":"GET /api/team/list?page=1 33ms","timestamp":"2018-05-21T02:03:26.827Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT count(*) as recordCount FROM fifa_image\" 11ms","timestamp":"2018-05-21T02:03:26.849Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT * FROM fifa_image LIMIT 0, 20\" 11ms","timestamp":"2018-05-21T02:03:26.860Z"}
+{"level":"info","message":"GET /api/slTeam/list?page=1 32ms","timestamp":"2018-05-21T02:03:26.861Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT count(*) as recordCount FROM fifa_team\" 10ms","timestamp":"2018-05-21T02:03:44.176Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT a.id , b.type, b.open_id , b.gmt_create , b.nation_name , a.winner , c.id lotteryId FROM fifa_competition a LEFT JOIN fifa_team b ON a.id = b.competition_id LEFT JOIN fifa_lottery c ON a.id = c.competition_id WHERE b.open_id IS NOT NULL LIMIT 0, 20\" 10ms","timestamp":"2018-05-21T02:03:44.187Z"}
+{"level":"info","message":"GET /api/team/list?page=1 34ms","timestamp":"2018-05-21T02:03:44.188Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT count(*) as recordCount FROM fifa_image\" 10ms","timestamp":"2018-05-21T02:03:44.211Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT * FROM fifa_image LIMIT 0, 20\" 11ms","timestamp":"2018-05-21T02:03:44.222Z"}
+{"level":"info","message":"GET /api/slTeam/list?page=1 31ms","timestamp":"2018-05-21T02:03:44.222Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT count(*) as recordCount FROM fifa_team\" 10ms","timestamp":"2018-05-21T02:07:35.544Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT a.id , b.type, b.open_id , b.gmt_create , b.nation_name , a.winner , c.id lotteryId FROM fifa_competition a LEFT JOIN fifa_team b ON a.id = b.competition_id LEFT JOIN fifa_lottery c ON a.id = c.competition_id WHERE b.open_id IS NOT NULL LIMIT 0, 20\" 14ms","timestamp":"2018-05-21T02:07:35.558Z"}
+{"level":"info","message":"GET /api/team/list?page=1 35ms","timestamp":"2018-05-21T02:07:35.558Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT count(*) as recordCount FROM fifa_image\" 11ms","timestamp":"2018-05-21T02:07:35.585Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT * FROM fifa_image LIMIT 20, 20\" 19ms","timestamp":"2018-05-21T02:07:35.604Z"}
+{"level":"info","message":"GET /api/slTeam/list?page=2 42ms","timestamp":"2018-05-21T02:07:35.604Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT count(*) as recordCount FROM fifa_prize\" 10ms","timestamp":"2018-05-21T02:07:42.321Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT * FROM fifa_prize LIMIT 0, 20\" 11ms","timestamp":"2018-05-21T02:07:42.332Z"}
+{"level":"info","message":"GET /api/prize/list?page=1 32ms","timestamp":"2018-05-21T02:07:42.332Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT count(*) as recordCount FROM fifa_lottery a LEFT JOIN fifa_prize b ON a.prize_id = b.id LEFT JOIN fifa_user c ON c.open_id = a.open_id\" 11ms","timestamp":"2018-05-21T02:07:42.367Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT a.id , a.open_id , a.gmt_create , b.prize_name , c.address , c.name , c.phone , c.area , c.zip_code FROM fifa_lottery a LEFT JOIN fifa_prize b ON a.prize_id = b.id LEFT JOIN fifa_user c ON c.open_id = a.open_id LIMIT 0, 20\" 11ms","timestamp":"2018-05-21T02:07:42.378Z"}
+{"level":"info","message":"GET /api/lottery/list?page=1 32ms","timestamp":"2018-05-21T02:07:42.378Z"}
+{"level":"info","message":"POST Body: {\"openId\":\"oWeWV5MbSlJ1vB_eL1_rpBtdrT-A\",\"address\":\"赋安科技大厦B座\",\"area\":\"南山区\",\"name\":\"周青赏\",\"phone\":\"13455555555\",\"zip_code\":\"518000\"}","timestamp":"2018-05-21T02:08:09.680Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT * FROM fifa_user WHERE open_id = 'oWeWV5MbSlJ1vB_eL1_rpBtdrT-A' LIMIT 1\" 11ms","timestamp":"2018-05-21T02:08:09.702Z"}
+{"level":"info","message":"EXEC SQL: \"UPDATE fifa_user SET address = '赋安科技大厦B座', name = '周青赏', phone = '13455555555', area = '南山区', zip_code = '518000' WHERE open_id = 'oWeWV5MbSlJ1vB_eL1_rpBtdrT-A'\" 11ms","timestamp":"2018-05-21T02:08:09.713Z"}
+{"level":"info","message":"POST /api/lottery/address/edit 34ms","timestamp":"2018-05-21T02:08:09.714Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT count(*) as recordCount FROM fifa_prize\" 10ms","timestamp":"2018-05-21T02:08:09.791Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT * FROM fifa_prize LIMIT 0, 20\" 11ms","timestamp":"2018-05-21T02:08:09.802Z"}
+{"level":"info","message":"GET /api/prize/list?page=1 32ms","timestamp":"2018-05-21T02:08:09.802Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT count(*) as recordCount FROM fifa_lottery a LEFT JOIN fifa_prize b ON a.prize_id = b.id LEFT JOIN fifa_user c ON c.open_id = a.open_id\" 10ms","timestamp":"2018-05-21T02:08:09.825Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT a.id , a.open_id , a.gmt_create , b.prize_name , c.address , c.name , c.phone , c.area , c.zip_code FROM fifa_lottery a LEFT JOIN fifa_prize b ON a.prize_id = b.id LEFT JOIN fifa_user c ON c.open_id = a.open_id LIMIT 0, 20\" 12ms","timestamp":"2018-05-21T02:08:09.837Z"}
+{"level":"info","message":"GET /api/lottery/list?page=1 33ms","timestamp":"2018-05-21T02:08:09.837Z"}
+{"level":"info","message":"POST Body: {\"openId\":\"oqTji5LaywmsA3Wu5zUgQZwSWVkc\",\"address\":\"赋安科技大厦A\",\"area\":\"南山区\",\"name\":\"彭伟\",\"phone\":\"110\",\"zip_code\":\"512191\"}","timestamp":"2018-05-21T02:09:37.786Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT * FROM fifa_user WHERE open_id = 'oqTji5LaywmsA3Wu5zUgQZwSWVkc' LIMIT 1\" 11ms","timestamp":"2018-05-21T02:09:37.807Z"}
+{"level":"info","message":"EXEC SQL: \"UPDATE fifa_user SET address = '赋安科技大厦A', name = '彭伟', phone = '110', area = '南山区', zip_code = '512191' WHERE open_id = 'oqTji5LaywmsA3Wu5zUgQZwSWVkc'\" 11ms","timestamp":"2018-05-21T02:09:37.818Z"}
+{"level":"info","message":"POST /api/lottery/address/edit 32ms","timestamp":"2018-05-21T02:09:37.818Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT count(*) as recordCount FROM fifa_prize\" 10ms","timestamp":"2018-05-21T02:09:37.885Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT * FROM fifa_prize LIMIT 0, 20\" 11ms","timestamp":"2018-05-21T02:09:37.896Z"}
+{"level":"info","message":"GET /api/prize/list?page=1 32ms","timestamp":"2018-05-21T02:09:37.897Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT count(*) as recordCount FROM fifa_lottery a LEFT JOIN fifa_prize b ON a.prize_id = b.id LEFT JOIN fifa_user c ON c.open_id = a.open_id\" 10ms","timestamp":"2018-05-21T02:09:37.917Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT a.id , a.open_id , a.gmt_create , b.prize_name , c.address , c.name , c.phone , c.area , c.zip_code FROM fifa_lottery a LEFT JOIN fifa_prize b ON a.prize_id = b.id LEFT JOIN fifa_user c ON c.open_id = a.open_id LIMIT 0, 20\" 12ms","timestamp":"2018-05-21T02:09:37.929Z"}
+{"level":"info","message":"GET /api/lottery/list?page=1 30ms","timestamp":"2018-05-21T02:09:37.929Z"}
+{"level":"info","message":"POST Body: {\"openId\":\"oqTji5ARSjb817dT-292Nvo9kLuA\",\"address\":\"新秀元B2\",\"area\":\"宝安区\",\"name\":\"德德\",\"phone\":\"13455556665\",\"zip_code\":\"543333\"}","timestamp":"2018-05-21T02:10:46.021Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT * FROM fifa_user WHERE open_id = 'oqTji5ARSjb817dT-292Nvo9kLuA' LIMIT 1\" 14ms","timestamp":"2018-05-21T02:10:46.165Z"}
+{"level":"info","message":"EXEC SQL: \"UPDATE fifa_user SET address = '新秀元B2', name = '德德', phone = '13455556665', area = '宝安区', zip_code = '543333' WHERE open_id = 'oqTji5ARSjb817dT-292Nvo9kLuA'\" 10ms","timestamp":"2018-05-21T02:10:46.176Z"}
+{"level":"info","message":"POST /api/lottery/address/edit 155ms","timestamp":"2018-05-21T02:10:46.176Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT count(*) as recordCount FROM fifa_prize\" 10ms","timestamp":"2018-05-21T02:10:46.340Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT * FROM fifa_prize LIMIT 0, 20\" 12ms","timestamp":"2018-05-21T02:10:46.352Z"}
+{"level":"info","message":"GET /api/prize/list?page=1 105ms","timestamp":"2018-05-21T02:10:46.352Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT count(*) as recordCount FROM fifa_lottery a LEFT JOIN fifa_prize b ON a.prize_id = b.id LEFT JOIN fifa_user c ON c.open_id = a.open_id\" 278ms","timestamp":"2018-05-21T02:10:46.644Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT a.id , a.open_id , a.gmt_create , b.prize_name , c.address , c.name , c.phone , c.area , c.zip_code FROM fifa_lottery a LEFT JOIN fifa_prize b ON a.prize_id = b.id LEFT JOIN fifa_user c ON c.open_id = a.open_id LIMIT 0, 20\" 21ms","timestamp":"2018-05-21T02:10:46.665Z"}
+{"level":"info","message":"GET /api/lottery/list?page=1 310ms","timestamp":"2018-05-21T02:10:46.665Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT count(*) as recordCount FROM fifa_prize\" 13ms","timestamp":"2018-05-21T02:12:58.668Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT * FROM fifa_prize LIMIT 0, 20\" 11ms","timestamp":"2018-05-21T02:12:58.679Z"}
+{"level":"info","message":"GET /api/prize/list?page=1 42ms","timestamp":"2018-05-21T02:12:58.679Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT count(*) as recordCount FROM fifa_lottery a LEFT JOIN fifa_prize b ON a.prize_id = b.id LEFT JOIN fifa_user c ON c.open_id = a.open_id\" 9ms","timestamp":"2018-05-21T02:12:58.718Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT a.id , a.open_id , a.gmt_create , b.prize_name , c.address , c.name , c.phone , c.area , c.zip_code FROM fifa_lottery a LEFT JOIN fifa_prize b ON a.prize_id = b.id LEFT JOIN fifa_user c ON c.open_id = a.open_id LIMIT 0, 20\" 11ms","timestamp":"2018-05-21T02:12:58.729Z"}
+{"level":"info","message":"GET /api/lottery/list?page=1 30ms","timestamp":"2018-05-21T02:12:58.729Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT * FROM fifa_admin_user WHERE user_name = 'admin' AND password = 'e10adc3949ba59abbe56e057f20f883e' LIMIT 1\" 11ms","timestamp":"2018-05-21T02:14:06.911Z"}
+{"level":"info","message":"GET /api/login?username=admin&password=e10adc3949ba59abbe56e057f20f883e 25ms","timestamp":"2018-05-21T02:14:06.914Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT count(*) as recordCount FROM fifa_team\" 10ms","timestamp":"2018-05-21T02:14:06.962Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT a.id , b.type, b.open_id , b.gmt_create , b.nation_name , a.winner , c.id lotteryId FROM fifa_competition a LEFT JOIN fifa_team b ON a.id = b.competition_id LEFT JOIN fifa_lottery c ON a.id = c.competition_id WHERE b.open_id IS NOT NULL LIMIT 0, 20\" 11ms","timestamp":"2018-05-21T02:14:06.973Z"}
+{"level":"info","message":"GET /api/team/list?page=1 31ms","timestamp":"2018-05-21T02:14:06.973Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT count(*) as recordCount FROM fifa_image\" 10ms","timestamp":"2018-05-21T02:14:07.006Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT * FROM fifa_image LIMIT 0, 20\" 10ms","timestamp":"2018-05-21T02:14:07.016Z"}
+{"level":"info","message":"GET /api/slTeam/list?page=1 31ms","timestamp":"2018-05-21T02:14:07.017Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT count(*) as recordCount FROM fifa_prize\" 10ms","timestamp":"2018-05-21T02:14:12.154Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT * FROM fifa_prize LIMIT 0, 20\" 10ms","timestamp":"2018-05-21T02:14:12.164Z"}
+{"level":"info","message":"GET /api/prize/list?page=1 32ms","timestamp":"2018-05-21T02:14:12.165Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT count(*) as recordCount FROM fifa_lottery a LEFT JOIN fifa_prize b ON a.prize_id = b.id LEFT JOIN fifa_user c ON c.open_id = a.open_id\" 9ms","timestamp":"2018-05-21T02:14:12.199Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT a.id , a.open_id , a.gmt_create , b.prize_name , c.address , c.name , c.phone , c.area , c.zip_code FROM fifa_lottery a LEFT JOIN fifa_prize b ON a.prize_id = b.id LEFT JOIN fifa_user c ON c.open_id = a.open_id LIMIT 0, 20\" 11ms","timestamp":"2018-05-21T02:14:12.210Z"}
+{"level":"info","message":"GET /api/lottery/list?page=1 30ms","timestamp":"2018-05-21T02:14:12.210Z"}
+{"message":"Redis connection lost and command aborted. It might have been processed.","stack":"AbortError: Redis connection lost and command aborted. It might have been processed.\n    at RedisClient.flush_and_error (/Users/dee/Projects/FIFA-ADMIN/node_modules/redis/index.js:362:23)\n    at RedisClient.connection_gone (/Users/dee/Projects/FIFA-ADMIN/node_modules/redis/index.js:664:14)\n    at RedisClient.on_error (/Users/dee/Projects/FIFA-ADMIN/node_modules/redis/index.js:410:10)\n    at Socket.<anonymous> (/Users/dee/Projects/FIFA-ADMIN/node_modules/redis/index.js:279:14)\n    at emitOne (events.js:116:13)\n    at Socket.emit (events.js:211:7)\n    at emitErrorNT (internal/streams/destroy.js:64:8)\n    at _combinedTickCallback (internal/process/next_tick.js:138:11)\n    at process._tickCallback (internal/process/next_tick.js:180:9)","code":"UNCERTAIN_STATE","command":"GET","args":["fp_rank"],"origin":{"code":"ETIMEDOUT","errno":"ETIMEDOUT","syscall":"read"},"headerSent":true,"level":"error","timestamp":"2018-05-21T02:17:25.011Z"}
+{"level":"info","message":"Redis 连接成功!","timestamp":"2018-05-21T02:17:28.022Z"}
+{"level":"info","message":"GET /api/update/rank 12ms","timestamp":"2018-05-21T02:17:37.115Z"}
+{"level":"info","message":"GET /api/update/rank 13ms","timestamp":"2018-05-21T02:17:40.907Z"}
+{"level":"info","message":"Redis 连接成功!","timestamp":"2018-05-21T02:31:10.315Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT count(*) as recordCount FROM fifa_team\" 15ms","timestamp":"2018-05-21T02:37:11.403Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT a.id , b.type, b.open_id , b.gmt_create , b.nation_name , a.winner , c.id lotteryId FROM fifa_competition a LEFT JOIN fifa_team b ON a.id = b.competition_id LEFT JOIN fifa_lottery c ON a.id = c.competition_id WHERE b.open_id IS NOT NULL LIMIT 0, 20\" 12ms","timestamp":"2018-05-21T02:37:11.416Z"}
+{"level":"info","message":"GET /api/team/list?page=1 86ms","timestamp":"2018-05-21T02:37:11.418Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT count(*) as recordCount FROM fifa_image\" 11ms","timestamp":"2018-05-21T02:37:11.454Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT * FROM fifa_image LIMIT 0, 20\" 13ms","timestamp":"2018-05-21T02:37:11.467Z"}
+{"level":"info","message":"GET /api/slTeam/list?page=1 35ms","timestamp":"2018-05-21T02:37:11.468Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT count(*) as recordCount FROM fifa_team\" 10ms","timestamp":"2018-05-21T02:37:31.138Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT a.id , b.type, b.open_id , b.gmt_create , b.nation_name , a.winner , c.id lotteryId FROM fifa_competition a LEFT JOIN fifa_team b ON a.id = b.competition_id LEFT JOIN fifa_lottery c ON a.id = c.competition_id WHERE b.open_id IS NOT NULL LIMIT 0, 20\" 11ms","timestamp":"2018-05-21T02:37:31.149Z"}
+{"level":"info","message":"GET /api/team/list?page=1 31ms","timestamp":"2018-05-21T02:37:31.149Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT count(*) as recordCount FROM fifa_image\" 9ms","timestamp":"2018-05-21T02:37:31.203Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT * FROM fifa_image LIMIT 0, 20\" 11ms","timestamp":"2018-05-21T02:37:31.215Z"}
+{"level":"info","message":"GET /api/slTeam/list?page=1 30ms","timestamp":"2018-05-21T02:37:31.215Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT count(*) as recordCount FROM fifa_team\" 12ms","timestamp":"2018-05-21T02:37:37.578Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT a.id , b.type, b.open_id , b.gmt_create , b.nation_name , a.winner , c.id lotteryId FROM fifa_competition a LEFT JOIN fifa_team b ON a.id = b.competition_id LEFT JOIN fifa_lottery c ON a.id = c.competition_id WHERE b.open_id IS NOT NULL LIMIT 0, 20\" 13ms","timestamp":"2018-05-21T02:37:37.592Z"}
+{"level":"info","message":"GET /api/team/list?page=1 37ms","timestamp":"2018-05-21T02:37:37.593Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT count(*) as recordCount FROM fifa_image\" 10ms","timestamp":"2018-05-21T02:37:37.615Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT * FROM fifa_image LIMIT 0, 20\" 14ms","timestamp":"2018-05-21T02:37:37.629Z"}
+{"level":"info","message":"GET /api/slTeam/list?page=1 33ms","timestamp":"2018-05-21T02:37:37.629Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT count(*) as recordCount FROM fifa_team\" 10ms","timestamp":"2018-05-21T02:40:46.878Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT a.id , b.type, b.open_id , b.gmt_create , b.nation_name , a.winner , c.id lotteryId FROM fifa_competition a LEFT JOIN fifa_team b ON a.id = b.competition_id LEFT JOIN fifa_lottery c ON a.id = c.competition_id WHERE b.open_id IS NOT NULL LIMIT 0, 20\" 11ms","timestamp":"2018-05-21T02:40:46.889Z"}
+{"level":"info","message":"GET /api/team/list?page=1 32ms","timestamp":"2018-05-21T02:40:46.889Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT count(*) as recordCount FROM fifa_image\" 9ms","timestamp":"2018-05-21T02:40:46.969Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT * FROM fifa_image LIMIT 0, 20\" 10ms","timestamp":"2018-05-21T02:40:46.979Z"}
+{"level":"info","message":"GET /api/slTeam/list?page=1 29ms","timestamp":"2018-05-21T02:40:46.979Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT count(*) as recordCount FROM fifa_team\" 10ms","timestamp":"2018-05-21T02:41:27.002Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT a.id , b.type, b.open_id , b.gmt_create , b.nation_name , a.winner , c.id lotteryId FROM fifa_competition a LEFT JOIN fifa_team b ON a.id = b.competition_id LEFT JOIN fifa_lottery c ON a.id = c.competition_id WHERE b.open_id IS NOT NULL LIMIT 0, 20\" 11ms","timestamp":"2018-05-21T02:41:27.013Z"}
+{"level":"info","message":"GET /api/team/list?page=1 31ms","timestamp":"2018-05-21T02:41:27.013Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT count(*) as recordCount FROM fifa_image\" 10ms","timestamp":"2018-05-21T02:41:27.042Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT * FROM fifa_image LIMIT 0, 20\" 10ms","timestamp":"2018-05-21T02:41:27.053Z"}
+{"level":"info","message":"GET /api/slTeam/list?page=1 36ms","timestamp":"2018-05-21T02:41:27.053Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT count(*) as recordCount FROM fifa_prize\" 9ms","timestamp":"2018-05-21T02:42:34.299Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT * FROM fifa_prize LIMIT 0, 20\" 12ms","timestamp":"2018-05-21T02:42:34.312Z"}
+{"level":"info","message":"GET /api/prize/list?page=1 33ms","timestamp":"2018-05-21T02:42:34.312Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT count(*) as recordCount FROM fifa_lottery a LEFT JOIN fifa_prize b ON a.prize_id = b.id LEFT JOIN fifa_user c ON c.open_id = a.open_id\" 9ms","timestamp":"2018-05-21T02:42:34.365Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT a.id , a.open_id , a.gmt_create , b.prize_name , c.address , c.name , c.phone , c.area , c.zip_code FROM fifa_lottery a LEFT JOIN fifa_prize b ON a.prize_id = b.id LEFT JOIN fifa_user c ON c.open_id = a.open_id LIMIT 0, 20\" 11ms","timestamp":"2018-05-21T02:42:34.376Z"}
+{"level":"info","message":"GET /api/lottery/list?page=1 30ms","timestamp":"2018-05-21T02:42:34.376Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT count(*) as recordCount FROM fifa_prize\" 10ms","timestamp":"2018-05-21T02:45:37.814Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT * FROM fifa_prize LIMIT 0, 20\" 14ms","timestamp":"2018-05-21T02:45:37.828Z"}
+{"level":"info","message":"GET /api/prize/list?page=1 40ms","timestamp":"2018-05-21T02:45:37.829Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT count(*) as recordCount FROM fifa_lottery a LEFT JOIN fifa_prize b ON a.prize_id = b.id LEFT JOIN fifa_user c ON c.open_id = a.open_id\" 10ms","timestamp":"2018-05-21T02:45:38.055Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT a.id , a.open_id , a.gmt_create , b.prize_name , c.address , c.name , c.phone , c.area , c.zip_code FROM fifa_lottery a LEFT JOIN fifa_prize b ON a.prize_id = b.id LEFT JOIN fifa_user c ON c.open_id = a.open_id LIMIT 0, 20\" 11ms","timestamp":"2018-05-21T02:45:38.066Z"}
+{"level":"info","message":"GET /api/lottery/list?page=1 218ms","timestamp":"2018-05-21T02:45:38.067Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT count(*) as recordCount FROM fifa_prize\" 11ms","timestamp":"2018-05-21T02:45:43.461Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT * FROM fifa_prize LIMIT 0, 20\" 15ms","timestamp":"2018-05-21T02:45:43.476Z"}
+{"level":"info","message":"GET /api/prize/list?page=1 37ms","timestamp":"2018-05-21T02:45:43.477Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT count(*) as recordCount FROM fifa_lottery a LEFT JOIN fifa_prize b ON a.prize_id = b.id LEFT JOIN fifa_user c ON c.open_id = a.open_id\" 10ms","timestamp":"2018-05-21T02:45:43.515Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT a.id , a.open_id , a.gmt_create , b.prize_name , c.address , c.name , c.phone , c.area , c.zip_code FROM fifa_lottery a LEFT JOIN fifa_prize b ON a.prize_id = b.id LEFT JOIN fifa_user c ON c.open_id = a.open_id LIMIT 0, 20\" 11ms","timestamp":"2018-05-21T02:45:43.526Z"}
+{"level":"info","message":"GET /api/lottery/list?page=1 32ms","timestamp":"2018-05-21T02:45:43.526Z"}
+{"level":"info","message":"POST Body: {\"password\":\"e10adc3949ba59abbe56e057f20f883e\",\"newPassword\":\"4297f44b13955235245b2497399d7a93\",\"confrimPassword\":\"4297f44b13955235245b2497399d7a93\",\"id\":1}","timestamp":"2018-05-21T03:03:17.645Z"}
+{"level":"info","message":"POST /api/setting/updatepwd 11ms","timestamp":"2018-05-21T03:03:17.658Z"}
+{"level":"info","message":"Redis 连接成功!","timestamp":"2018-05-21T03:21:22.288Z"}
+{"level":"info","message":"POST Body: {\"password\":\"e10adc3949ba59abbe56e057f20f883e\",\"newPassword\":\"4297f44b13955235245b2497399d7a93\",\"confrimPassword\":\"4297f44b13955235245b2497399d7a93\",\"id\":1}","timestamp":"2018-05-21T03:21:46.864Z"}
+{"level":"info","message":"POST /api/setting/updatepwd 3ms","timestamp":"2018-05-21T03:21:46.867Z"}
+{"level":"info","message":"Redis 连接成功!","timestamp":"2018-05-21T03:23:08.407Z"}
+{"level":"info","message":"POST Body: {\"password\":\"14e1b600b1fd579f47433b88e8d85291\",\"newPassword\":\"63ee451939ed580ef3c4b6f0109d1fd0\",\"confrimPassword\":\"63ee451939ed580ef3c4b6f0109d1fd0\",\"id\":1}","timestamp":"2018-05-21T03:23:20.640Z"}
+{"message":"next.cookie is not a function","stack":"TypeError: next.cookie is not a function\n    at apiRouter.post (/Users/dee/Projects/FIFA-ADMIN/server/router/index.js:102:8)\n    at dispatch (/Users/dee/Projects/FIFA-ADMIN/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)\n    at next (/Users/dee/Projects/FIFA-ADMIN/node_modules/koa-router/node_modules/koa-compose/index.js:45:18)\n    at /Users/dee/Projects/FIFA-ADMIN/node_modules/koa-router/lib/router.js:346:16\n    at dispatch (/Users/dee/Projects/FIFA-ADMIN/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)\n    at /Users/dee/Projects/FIFA-ADMIN/node_modules/koa-router/node_modules/koa-compose/index.js:36:12\n    at dispatch (/Users/dee/Projects/FIFA-ADMIN/node_modules/koa-router/lib/router.js:351:31)\n    at dispatch (/Users/dee/Projects/FIFA-ADMIN/node_modules/koa-compose/index.js:42:32)\n    at /Users/dee/Projects/FIFA-ADMIN/node_modules/koa-compose/index.js:34:12\n    at dispatch (/Users/dee/Projects/FIFA-ADMIN/node_modules/koa-compose/index.js:42:32)\n    at next (/Users/dee/Projects/FIFA-ADMIN/node_modules/koa-compose/index.js:43:18)\n    at app.use (/Users/dee/Projects/FIFA-ADMIN/server/index.js:60:9)\n    at dispatch (/Users/dee/Projects/FIFA-ADMIN/node_modules/koa-compose/index.js:42:32)\n    at next (/Users/dee/Projects/FIFA-ADMIN/node_modules/koa-compose/index.js:43:18)\n    at bodyParser (/Users/dee/Projects/FIFA-ADMIN/node_modules/koa-bodyparser/index.js:86:11)\n    at <anonymous>","headers":{"Access-Control-Allow-Origin":"http://localhost:3000"},"level":"error","timestamp":"2018-05-21T03:23:20.645Z"}
+{"level":"info","message":"Redis 连接成功!","timestamp":"2018-05-21T03:24:36.289Z"}
+{"level":"info","message":"POST Body: {\"password\":\"c56d0e9a7ccec67b4ea131655038d604\",\"newPassword\":\"312fd2f3cabafc9417c35fd00efdaa5d\",\"confrimPassword\":\"312fd2f3cabafc9417c35fd00efdaa5d\",\"id\":1}","timestamp":"2018-05-21T03:24:48.556Z"}
+{"level":"info","message":"POST /api/setting/updatepwd 3ms","timestamp":"2018-05-21T03:24:48.559Z"}
+{"level":"info","message":"Redis 连接成功!","timestamp":"2018-05-21T03:36:29.315Z"}
+{"level":"info","message":"POST Body: {\"password\":\"f4cc399f0effd13c888e310ea2cf5399\",\"newPassword\":\"1c138be35c6cf9993d329e20cc0f9e4d\",\"confrimPassword\":\"1c138be35c6cf9993d329e20cc0f9e4d\",\"id\":1}","timestamp":"2018-05-21T03:36:35.823Z"}
+{"level":"info","message":"POST /api/setting/updatepwd 4ms","timestamp":"2018-05-21T03:36:35.828Z"}
+{"level":"info","message":"Redis 连接成功!","timestamp":"2018-05-21T03:38:41.469Z"}
+{"level":"info","message":"POST Body: {\"password\":\"c26be8aaf53b15054896983b43eb6a65\",\"newPassword\":\"5019a118b9d2dac51585e4b5322ed3e1\",\"confrimPassword\":\"5019a118b9d2dac51585e4b5322ed3e1\",\"id\":1}","timestamp":"2018-05-21T03:38:54.103Z"}
+{"level":"info","message":"POST /api/setting/updatepwd 4ms","timestamp":"2018-05-21T03:38:54.108Z"}
+{"level":"info","message":"Redis 连接成功!","timestamp":"2018-05-21T03:41:27.427Z"}
+{"level":"info","message":"POST Body: {\"password\":\"355e02d13bce12b4090b5117d6d4852f\",\"newPassword\":\"e10adc3949ba59abbe56e057f20f883e\",\"confrimPassword\":\"e10adc3949ba59abbe56e057f20f883e\",\"id\":1}","timestamp":"2018-05-21T03:41:47.231Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT * FROM fifa_admin_user WHERE id = 1 LIMIT 1\" 14ms","timestamp":"2018-05-21T03:41:47.306Z"}
+{"level":"info","message":"POST /api/setting/updatepwd 76ms","timestamp":"2018-05-21T03:41:47.307Z"}
+{"level":"info","message":"POST Body: {\"password\":\"e10adc3949ba59abbe56e057f20f883e\",\"newPassword\":\"4297f44b13955235245b2497399d7a93\",\"confrimPassword\":\"4297f44b13955235245b2497399d7a93\",\"id\":1}","timestamp":"2018-05-21T03:42:22.614Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT * FROM fifa_admin_user WHERE id = 1 LIMIT 1\" 11ms","timestamp":"2018-05-21T03:42:22.638Z"}
+{"level":"info","message":"EXEC SQL: \"UPDATE fifa_admin_user SET password = '4297f44b13955235245b2497399d7a93' WHERE id = 1\" 11ms","timestamp":"2018-05-21T03:42:22.664Z"}
+{"level":"info","message":"POST /api/setting/updatepwd 49ms","timestamp":"2018-05-21T03:42:22.664Z"}
+{"level":"info","message":"POST Body: {\"password\":\"4297f44b13955235245b2497399d7a93\",\"newPassword\":\"e10adc3949ba59abbe56e057f20f883e\",\"confrimPassword\":\"e10adc3949ba59abbe56e057f20f883e\",\"id\":1}","timestamp":"2018-05-21T03:46:22.583Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT * FROM fifa_admin_user WHERE id = 1 LIMIT 1\" 11ms","timestamp":"2018-05-21T03:46:22.606Z"}
+{"level":"info","message":"EXEC SQL: \"UPDATE fifa_admin_user SET password = 'e10adc3949ba59abbe56e057f20f883e' WHERE id = 1\" 12ms","timestamp":"2018-05-21T03:46:22.628Z"}
+{"level":"info","message":"POST /api/setting/updatepwd 46ms","timestamp":"2018-05-21T03:46:22.629Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT count(*) as recordCount FROM fifa_team\" 10ms","timestamp":"2018-05-21T03:46:24.229Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT a.id , b.type, b.open_id , b.gmt_create , b.nation_name , a.winner , c.id lotteryId FROM fifa_competition a LEFT JOIN fifa_team b ON a.id = b.competition_id LEFT JOIN fifa_lottery c ON a.id = c.competition_id WHERE b.open_id IS NOT NULL LIMIT 0, 20\" 14ms","timestamp":"2018-05-21T03:46:24.244Z"}
+{"level":"info","message":"GET /api/team/list?page=1 39ms","timestamp":"2018-05-21T03:46:24.245Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT count(*) as recordCount FROM fifa_image\" 10ms","timestamp":"2018-05-21T03:46:24.274Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT * FROM fifa_image LIMIT 0, 20\" 11ms","timestamp":"2018-05-21T03:46:24.285Z"}
+{"level":"info","message":"GET /api/slTeam/list?page=1 32ms","timestamp":"2018-05-21T03:46:24.285Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT * FROM fifa_admin_user WHERE user_name = 'amin' AND password = 'e10adc3949ba59abbe56e057f20f883e' LIMIT 1\" 11ms","timestamp":"2018-05-21T03:46:54.388Z"}
+{"level":"info","message":"GET /api/login?username=amin&password=e10adc3949ba59abbe56e057f20f883e 23ms","timestamp":"2018-05-21T03:46:54.389Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT * FROM fifa_admin_user WHERE user_name = 'amin' AND password = 'e10adc3949ba59abbe56e057f20f883e' LIMIT 1\" 12ms","timestamp":"2018-05-21T03:46:58.748Z"}
+{"level":"info","message":"GET /api/login?username=amin&password=e10adc3949ba59abbe56e057f20f883e 23ms","timestamp":"2018-05-21T03:46:58.749Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT * FROM fifa_admin_user WHERE user_name = 'amin' AND password = '4297f44b13955235245b2497399d7a93' LIMIT 1\" 12ms","timestamp":"2018-05-21T03:47:05.281Z"}
+{"level":"info","message":"GET /api/login?username=amin&password=4297f44b13955235245b2497399d7a93 24ms","timestamp":"2018-05-21T03:47:05.282Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT * FROM fifa_admin_user WHERE user_name = 'admin' AND password = 'e10adc3949ba59abbe56e057f20f883e' LIMIT 1\" 12ms","timestamp":"2018-05-21T03:47:12.757Z"}
+{"level":"info","message":"GET /api/login?username=admin&password=e10adc3949ba59abbe56e057f20f883e 26ms","timestamp":"2018-05-21T03:47:12.761Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT count(*) as recordCount FROM fifa_team\" 10ms","timestamp":"2018-05-21T03:47:12.858Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT a.id , b.type, b.open_id , b.gmt_create , b.nation_name , a.winner , c.id lotteryId FROM fifa_competition a LEFT JOIN fifa_team b ON a.id = b.competition_id LEFT JOIN fifa_lottery c ON a.id = c.competition_id WHERE b.open_id IS NOT NULL LIMIT 0, 20\" 13ms","timestamp":"2018-05-21T03:47:12.872Z"}
+{"level":"info","message":"GET /api/team/list?page=1 36ms","timestamp":"2018-05-21T03:47:12.873Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT count(*) as recordCount FROM fifa_image\" 10ms","timestamp":"2018-05-21T03:47:12.910Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT * FROM fifa_image LIMIT 0, 20\" 11ms","timestamp":"2018-05-21T03:47:12.921Z"}
+{"level":"info","message":"GET /api/slTeam/list?page=1 32ms","timestamp":"2018-05-21T03:47:12.922Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT * FROM fifa_admin_user WHERE user_name = 'admin' AND password = 'e10adc3949ba59abbe56e057f20f883e' LIMIT 1\" 11ms","timestamp":"2018-05-21T03:47:45.914Z"}
+{"level":"info","message":"GET /api/login?username=admin&password=e10adc3949ba59abbe56e057f20f883e 25ms","timestamp":"2018-05-21T03:47:45.915Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT count(*) as recordCount FROM fifa_team\" 10ms","timestamp":"2018-05-21T03:47:45.971Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT a.id , b.type, b.open_id , b.gmt_create , b.nation_name , a.winner , c.id lotteryId FROM fifa_competition a LEFT JOIN fifa_team b ON a.id = b.competition_id LEFT JOIN fifa_lottery c ON a.id = c.competition_id WHERE b.open_id IS NOT NULL LIMIT 0, 20\" 11ms","timestamp":"2018-05-21T03:47:45.982Z"}
+{"level":"info","message":"GET /api/team/list?page=1 32ms","timestamp":"2018-05-21T03:47:45.982Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT count(*) as recordCount FROM fifa_image\" 10ms","timestamp":"2018-05-21T03:47:46.014Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT * FROM fifa_image LIMIT 0, 20\" 17ms","timestamp":"2018-05-21T03:47:46.032Z"}
+{"level":"info","message":"GET /api/slTeam/list?page=1 39ms","timestamp":"2018-05-21T03:47:46.033Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT count(*) as recordCount FROM fifa_prize\" 20ms","timestamp":"2018-05-21T03:47:47.787Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT * FROM fifa_prize LIMIT 0, 20\" 13ms","timestamp":"2018-05-21T03:47:47.800Z"}
+{"level":"info","message":"GET /api/prize/list?page=1 44ms","timestamp":"2018-05-21T03:47:47.800Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT count(*) as recordCount FROM fifa_lottery a LEFT JOIN fifa_prize b ON a.prize_id = b.id LEFT JOIN fifa_user c ON c.open_id = a.open_id\" 10ms","timestamp":"2018-05-21T03:47:47.837Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT a.id , a.open_id , a.gmt_create , b.prize_name , c.address , c.name , c.phone , c.area , c.zip_code FROM fifa_lottery a LEFT JOIN fifa_prize b ON a.prize_id = b.id LEFT JOIN fifa_user c ON c.open_id = a.open_id LIMIT 0, 20\" 11ms","timestamp":"2018-05-21T03:47:47.848Z"}
+{"level":"info","message":"GET /api/lottery/list?page=1 38ms","timestamp":"2018-05-21T03:47:47.849Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT count(*) as recordCount FROM fifa_team\" 18ms","timestamp":"2018-05-21T03:47:52.302Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT a.id , b.type, b.open_id , b.gmt_create , b.nation_name , a.winner , c.id lotteryId FROM fifa_competition a LEFT JOIN fifa_team b ON a.id = b.competition_id LEFT JOIN fifa_lottery c ON a.id = c.competition_id WHERE b.open_id IS NOT NULL LIMIT 0, 20\" 23ms","timestamp":"2018-05-21T03:47:52.326Z"}
+{"level":"info","message":"GET /api/team/list?page=1 56ms","timestamp":"2018-05-21T03:47:52.326Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT count(*) as recordCount FROM fifa_image\" 26ms","timestamp":"2018-05-21T03:47:52.387Z"}
+{"level":"info","message":"EXEC SQL: \"SELECT * FROM fifa_image LIMIT 0, 20\" 22ms","timestamp":"2018-05-21T03:47:52.409Z"}
+{"level":"info","message":"GET /api/slTeam/list?page=1 69ms","timestamp":"2018-05-21T03:47:52.410Z"}
+{"level":"info","message":"Redis 连接成功!","timestamp":"2018-05-21T05:53:01.836Z"}

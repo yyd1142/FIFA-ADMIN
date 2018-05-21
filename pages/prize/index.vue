@@ -93,15 +93,9 @@
     async asyncData(ctx){
       let currentPage = 1;
       let lotteryPage = 1;
-      let activeName = 'one';
-      if (ctx.query.page && ctx.query.name === 'one') {
-        currentPage = parseInt(ctx.query.page);
-        activeName = ctx.query.name
-      }
-      if (ctx.query.page && ctx.query.name === 'two') {
-        lotteryPage = parseInt(ctx.query.page);
-        activeName = ctx.query.name
-      }
+      let activeName = ctx.query.name || 'one';
+      if (ctx.query.page && ctx.query.name === 'one') currentPage = parseInt(ctx.query.page);
+      if (ctx.query.page && ctx.query.name === 'two') lotteryPage = parseInt(ctx.query.page);
       let result = await api.getPrizeList({
         page: currentPage
       });
@@ -160,13 +154,7 @@
         })
       },
       handleCurrentChange(e) {
-        this.$router.push({
-          path: '/prize',
-          query: {
-            page: e,
-            name: this.activeName
-          }
-        })
+        window.location.href = `/prize?page=${e}&name=${this.activeName}`;
       },
       addPrize() {
         this.$router.push({

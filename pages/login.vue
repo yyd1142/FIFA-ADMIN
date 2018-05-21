@@ -8,7 +8,6 @@
         <el-checkbox class="login-cell" v-model="checked">一周内记住密码</el-checkbox>
         <el-button class="login-cell login-btn" type="primary" @click="login">登&nbsp;&nbsp;录</el-button>
       </el-card>
-      <canvas id="c_n1"></canvas>
     </div>
   </div>
 </template>
@@ -16,7 +15,7 @@
 <script>
   import api from '~/plugins/api'
   import md5 from 'blueimp-md5'
-  import {setUser} from '~/utils/auth'
+  import { setUser } from '~/utils/auth'
 
   export default {
     async asyncData(ctx) {
@@ -25,7 +24,7 @@
           username: '',
           password: ''
         },
-        checked: false
+        checked: false,
       }
     },
     methods: {

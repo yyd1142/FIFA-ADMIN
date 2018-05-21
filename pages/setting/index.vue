@@ -100,9 +100,15 @@
         postBody['confrimPassword'] = md5(postBody.confrimPassword);
         api.updatePassord({}, postBody).then(result => {
           if (result && result.code == 0) {
-
+            this.$message({
+              message: '修改成功，请重新登录',
+              type: 'success'
+            });
+            setTimeout(() => {
+              window.location.replace(`/login?redirect=team`);
+            }, 1500);
           } else {
-
+            this.$message.error('修改失败，请重试');
           }
         })
       }

@@ -87,37 +87,36 @@ apiRouter.get('/lottery/list', async (ctx, next) => {
   ctx.body = {code: 0, response: response}
 })
 
-apiRouter.post('/lottery/address/edit', async(ctx, next) => {
+apiRouter.post('/lottery/address/edit', async (ctx, next) => {
   let body = ctx.request.body;
   let openId = body.openId;
   await prizeDBAction.editLotteryAddressByOpenID(openId, body);
   ctx.body = {code: 0};
 })
 
-apiRouter.post('/setting/updatepwd', async(ctx, next) => {
+apiRouter.post('/setting/updatepwd', async (ctx, next) => {
   let body = ctx.request.body;
   let password = body.password;
   let newPassword = body.newPassword;
-  let userId = parseInt(ctx.cookies.get('id'));
-  console.log(userId);
-  if (Number.isNaN(userId)){
+  let userId = parseInt(body.id);
+  if (Number.isNaN(userId)) {
     ctx.body = {code: 1, msg: '非法用户，无权操作'};
     return;
   }
   let userInfo = await userDBAction.getRecordByID(userId);
-  if (!userInfo){
+  if (!userInfo) {
     ctx.body = {code: 1, msg: '非法用户，无权操作'};
     return;
   }
-  if (userInfo.password === password){
+  if (userInfo.password === password) {
     await settingDBAction.editPwdById(newPassword, userId);
     ctx.body = {code: 0};
-  }else {
+  } else {
     ctx.body = {code: 1, msg: '修改密码失败，原密码错误'};
   }
 })
 
-apiRouter.get('/update/rank', async(ctx, next) => {
+apiRouter.get('/update/rank', async (ctx, next) => {
   let response = await prizeDBAction.updateRank();
   ctx.body = {code: 0, response: response};
 })
